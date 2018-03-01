@@ -1,0 +1,30 @@
+Entidad	TipConditionId	descripcion del nivel	Nivel	Pista
+Arma	NoInv	No tenes le objeto en el invetario	1	No tienes el arma homicida!
+Arma	NoInv	Pistas sobre donde esta el objeto	2	Está muy cerca del muerto.
+Arma	NoInv		2	El arma está en uno de los asientos.
+Arma	MalaElecc	Cuando tenes el objeto, pero pones otro	3	Intenta con otra arma.
+Arma	MalaElecc		3	El arma homicida es incorrecta.
+Arma	MalaElecc	Pistas de cual es	4	Se suelen regalar en San Valentin.
+Arma	MalaElecc		4	Es un regalo con chocolates.
+Arma	NoCondicion	esplicitamente que es	5	La caja de bombones.
+Arma	NoCondicion		5	La caja de bombones.
+Sospechoso	NoInv	No tenes le objeto en el invetario	1	Haz nuevos amigos! Habla con más gente.
+Sospechoso	NoInv	Pistas sobre donde esta el objeto	2	Busca en las esquinas.
+Sospechoso	NoInv		2	Busca por los rincones.
+Sospechoso	MalaElecc	Cuando tenes el objeto, pero pones otro	3	Abriste la tapita de la gaseosa que decía "intenta con otra persona".
+Sospechoso	MalaElecc		3	Fue alguien más.
+Sospechoso	MalaElecc	Pistas de cual es	4	Tiene el mismo nombre que el Capitán Sparrow.
+Sospechoso	MalaElecc		4	Se llama igual que Leonardo en Titanic.
+Sospechoso	NoCondicion	esplicitamente que es	5	Por si no era obvio la respuesta es Jack.
+Sospechoso	NoCondicion		5	Fue jack.
+Motivo	NoInv	No tenes el texto en el invetario	1	¿Por qué eres tan anti social? Habla con todos!
+Motivo	NoInv	Pistas sobre como objetenerl (persona con quien hablar o objeto que tocar)	2	Busca por los rincones.
+Motivo	NoInv		2	Busca en las esquinas.
+Motivo	MalaElecc	Cuando tenes el texto, pero seccionas otro	3	Esa no es la razón...intenta con otra.
+Motivo	MalaElecc		3	Vamos es fácil. Intenta con otro motivo.
+Motivo	MalaElecc	Pistas de cual es	4	Está relacionado con quedarse solo.
+Motivo	MalaElecc		4	Tiene relación con la soledad.
+Motivo	NoCondicion	esplicitamente que es	5	Es por abandono!
+Motivo	NoCondicion		5	Lo abandonaron! Lo dejaron solito :(
+Evidencia	EvIncomp	Te falta evidencias	1	Te faltan evidencias
+Evidencia	EvMal	Tenes falsa evidencias	2	Alguna evidencia no esta correcta

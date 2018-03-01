@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 3cb1733ffc22f34449ee4716862e4de7
+timeCreated: 1472849283
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bowl 002
+    100004: Bowl 003
+    100006: Bowl 004
+    100008: Bowl 005
+    100010: Bowl 006
+    100012: Bowl 007
+    100014: Bowl 008
+    100016: Bowl 009
+    100018: Bowl 010
+    100020: Bowl 011
+    100022: Bowl 012
+    100024: Bowl 013
+    100026: Bowl 014
+    100028: Bowl 015
+    100030: Bowl 016
+    100032: Bowl 017
+    100034: Bowl 018
+    100036: Bowl 019
+    100038: Bowl 020
+    100040: Bowl 021
+    100042: Bowl 022
+    100044: Bowl 023
+    100046: Bowl 024
+    100048: Bowl 025
+    100050: Bowl 026
+    100052: Bowl 027
+    100054: Bowl 028
+    100056: Bowl 1
+    100058: Bowls
+    100060: Copa
+    100062: Copa001
+    100064: Copa002
+    100066: Copa003
+    100068: Copa004
+    100070: Copa005
+    100072: Copa006
+    100074: Copa007
+    100076: Copa008
+    100078: Copa009
+    100080: Copas
+    100082: Cuchara
+    100084: Cuchara001
+    100086: Cuchara002
+    100088: Cuchara003
+    100090: Cuchara004
+    100092: Cuchara005
+    100094: Cuchara006
+    100096: Cuchara007
+    100098: Cuchara008
+    100100: Cuchara009
+    100102: Cuchara010
+    100104: Cuchara011
+    100106: Cuchara013
+    100108: Cuchara014
+    100110: Cuchara015
+    100112: Cucharas
+    100114: Cucharit10
+    100116: Cucharita0
+    100118: Cucharita1
+    100120: Cucharita2
+    100122: Cucharita3
+    100124: Cucharita4
+    100126: Cucharita5
+    100128: Cucharita6
+    100130: Cucharita7
+    100132: Cucharita8
+    100134: Cucharita9
+    100136: Cucharitas
+    100138: Cuchillo
+    100140: Cuchillo00
+    100142: Cuchillo01
+    100144: Cuchillo02
+    100146: Cuchillo03
+    100148: Cuchillo04
+    100150: Cuchillo05
+    100152: Cuchillo06
+    100154: Cuchillo07
+    100156: Cuchillo08
+    100158: Cuchillo09
+    100160: Cuchillo10
+    100162: Cuchillo11
+    100164: Cuchillo12
+    100166: Cuchillo13
+    100168: Cuchillo14
+    100170: Cuchillo15
+    100172: Cuchillo16
+    100174: Cuchillo17
+    100176: Cuchillo18
+    100178: Cuchillos
+    100180: Plato 002
+    100182: Plato 003
+    100184: Plato 004
+    100186: Plato 005
+    100188: Plato 006
+    100190: Plato 007
+    100192: Plato 008
+    100194: Plato 009
+    100196: Plato 010
+    100198: Plato 011
+    100200: Plato 012
+    100202: Plato 013
+    100204: Plato 014
+    100206: Plato 015
+    100208: Plato 016
+    100210: Plato 017
+    100212: Plato 018
+    100214: Plato 019
+    100216: Plato 020
+    100218: Plato 021
+    100220: Plato 022
+    100222: Plato 023
+    100224: Plato 024
+    100226: Plato 025
+    100228: Plato 026
+    100230: Plato 027
+    100232: Plato 028
+    100234: Plato 029
+    100236: Plato 030
+    100238: Plato 031
+    100240: Plato 032
+    100242: Plato 1
+    100244: Platos
+    100246: Taza001
+    100248: Taza002
+    100250: Taza003
+    100252: Taza004
+    100254: Taza005
+    100256: Taza006
+    100258: Taza007
+    100260: Taza008
+    100262: Taza009
+    100264: Taza010
+    100266: Taza011
+    100268: Taza012
+    100270: Taza013
+    100272: Taza014
+    100274: Taza015
+    100276: Taza016
+    100278: Taza017
+    100280: Taza018
+    100282: Taza019
+    100284: Taza020
+    100286: Tenedor001
+    100288: Tenedor002
+    100290: Tenedor003
+    100292: Tenedor004
+    100294: Tenedor005
+    100296: Tenedor006
+    100298: Tenedor007
+    100300: Tenedor008
+    100302: Tenedor009
+    100304: Tenedor010
+    100306: Tenedor011
+    100308: Tenedor012
+    100310: Tenedor013
+    100312: Tenedor014
+    100314: Tenedor015
+    100316: Tenedor016
+    100318: Tenedor017
+    100320: Tenedor018
+    100322: Tenedor019
+    100324: Tenedor020
+    100326: Tenedor021
+    100328: Tenedor022
+    100330: Tenedor023
+    100332: Tenedor024
+    100334: Tenedor025
+    100336: Tenedor026
+    100338: Tenedor027
+    100340: Tenedor028
+    100342: Tenedor029
+    100344: Tenedor030
+    100346: Tenedor031
+    100348: Tenedor032
+    100350: Tenedor033
+    100352: Tenedor034
+    100354: Tenedor035
+    100356: Tenedor036
+    100358: Tenedor037
+    100360: Tenedor038
+    100362: Tenedor039
+    100364: Tenedor040
+    100366: Tenedor041
+    100368: Tenedor042
+    100370: Tenedor043
+    100372: Tenedor044
+    100374: Tenedor045
+    100376: Tenedor046
+    100378: Tenedor047
+    100380: Tenedor048
+    100382: Tenedor049
+    100384: Tenedor050
+    100386: Tenedor051
+    100388: Tenedor052
+    100390: Tenedor053
+    100392: Tenedor054
+    100394: Tenedor055
+    100396: Tenedor056
+    100398: Tenedor057
+    100400: Tenedor058
+    100402: Tenedor059
+    100404: Tenedor060
+    100406: Tenedor061
+    100408: Tenedor062
+    100410: Tenedor063
+    100412: Tenedor064
+    100414: Tenedor065
+    100416: Tenedor066
+    100418: Tenedor067
+    100420: Tenedor068
+    100422: Tenedor069
+    100424: Tenedor070
+    100426: Tenedor071
+    100428: Tenedores
+    100430: Vaso
+    100432: Vaso001
+    100434: Vaso002
+    100436: Vaso003
+    100438: Vaso004
+    100440: Vaso005
+    100442: Vaso006
+    100444: Vaso007
+    100446: Vaso008
+    100448: Vaso009
+    100450: Vaso010
+    100452: Vaso011
+    100454: Vaso012
+    100456: Vaso013
+    100458: Vaso014
+    100460: Vaso015
+    100462: Vaso016
+    100464: Vaso017
+    100466: Vaso018
+    100468: Vaso019
+    100470: Vaso020
+    100472: Vaso021
+    100474: Vaso022
+    100476: Vaso023
+    100478: Vaso024
+    100480: Vaso025
+    100482: Vaso026
+    100484: Vasos
+    100486: Tazas
+    400000: //RootNode
+    400002: Bowl 002
+    400004: Bowl 003
+    400006: Bowl 004
+    400008: Bowl 005
+    400010: Bowl 006
+    400012: Bowl 007
+    400014: Bowl 008
+    400016: Bowl 009
+    400018: Bowl 010
+    400020: Bowl 011
+    400022: Bowl 012
+    400024: Bowl 013
+    400026: Bowl 014
+    400028: Bowl 015
+    400030: Bowl 016
+    400032: Bowl 017
+    400034: Bowl 018
+    400036: Bowl 019
+    400038: Bowl 020
+    400040: Bowl 021
+    400042: Bowl 022
+    400044: Bowl 023
+    400046: Bowl 024
+    400048: Bowl 025
+    400050: Bowl 026
+    400052: Bowl 027
+    400054: Bowl 028
+    400056: Bowl 1
+    400058: Bowls
+    400060: Copa
+    400062: Copa001
+    400064: Copa002
+    400066: Copa003
+    400068: Copa004
+    400070: Copa005
+    400072: Copa006
+    400074: Copa007
+    400076: Copa008
+    400078: Copa009
+    400080: Copas
+    400082: Cuchara
+    400084: Cuchara001
+    400086: Cuchara002
+    400088: Cuchara003
+    400090: Cuchara004
+    400092: Cuchara005
+    400094: Cuchara006
+    400096: Cuchara007
+    400098: Cuchara008
+    400100: Cuchara009
+    400102: Cuchara010
+    400104: Cuchara011
+    400106: Cuchara013
+    400108: Cuchara014
+    400110: Cuchara015
+    400112: Cucharas
+    400114: Cucharit10
+    400116: Cucharita0
+    400118: Cucharita1
+    400120: Cucharita2
+    400122: Cucharita3
+    400124: Cucharita4
+    400126: Cucharita5
+    400128: Cucharita6
+    400130: Cucharita7
+    400132: Cucharita8
+    400134: Cucharita9
+    400136: Cucharitas
+    400138: Cuchillo
+    400140: Cuchillo00
+    400142: Cuchillo01
+    400144: Cuchillo02
+    400146: Cuchillo03
+    400148: Cuchillo04
+    400150: Cuchillo05
+    400152: Cuchillo06
+    400154: Cuchillo07
+    400156: Cuchillo08
+    400158: Cuchillo09
+    400160: Cuchillo10
+    400162: Cuchillo11
+    400164: Cuchillo12
+    400166: Cuchillo13
+    400168: Cuchillo14
+    400170: Cuchillo15
+    400172: Cuchillo16
+    400174: Cuchillo17
+    400176: Cuchillo18
+    400178: Cuchillos
+    400180: Plato 002
+    400182: Plato 003
+    400184: Plato 004
+    400186: Plato 005
+    400188: Plato 006
+    400190: Plato 007
+    400192: Plato 008
+    400194: Plato 009
+    400196: Plato 010
+    400198: Plato 011
+    400200: Plato 012
+    400202: Plato 013
+    400204: Plato 014
+    400206: Plato 015
+    400208: Plato 016
+    400210: Plato 017
+    400212: Plato 018
+    400214: Plato 019
+    400216: Plato 020
+    400218: Plato 021
+    400220: Plato 022
+    400222: Plato 023
+    400224: Plato 024
+    400226: Plato 025
+    400228: Plato 026
+    400230: Plato 027
+    400232: Plato 028
+    400234: Plato 029
+    400236: Plato 030
+    400238: Plato 031
+    400240: Plato 032
+    400242: Plato 1
+    400244: Platos
+    400246: Taza001
+    400248: Taza002
+    400250: Taza003
+    400252: Taza004
+    400254: Taza005
+    400256: Taza006
+    400258: Taza007
+    400260: Taza008
+    400262: Taza009
+    400264: Taza010
+    400266: Taza011
+    400268: Taza012
+    400270: Taza013
+    400272: Taza014
+    400274: Taza015
+    400276: Taza016
+    400278: Taza017
+    400280: Taza018
+    400282: Taza019
+    400284: Taza020
+    400286: Tenedor001
+    400288: Tenedor002
+    400290: Tenedor003
+    400292: Tenedor004
+    400294: Tenedor005
+    400296: Tenedor006
+    400298: Tenedor007
+    400300: Tenedor008
+    400302: Tenedor009
+    400304: Tenedor010
+    400306: Tenedor011
+    400308: Tenedor012
+    400310: Tenedor013
+    400312: Tenedor014
+    400314: Tenedor015
+    400316: Tenedor016
+    400318: Tenedor017
+    400320: Tenedor018
+    400322: Tenedor019
+    400324: Tenedor020
+    400326: Tenedor021
+    400328: Tenedor022
+    400330: Tenedor023
+    400332: Tenedor024
+    400334: Tenedor025
+    400336: Tenedor026
+    400338: Tenedor027
+    400340: Tenedor028
+    400342: Tenedor029
+    400344: Tenedor030
+    400346: Tenedor031
+    400348: Tenedor032
+    400350: Tenedor033
+    400352: Tenedor034
+    400354: Tenedor035
+    400356: Tenedor036
+    400358: Tenedor037
+    400360: Tenedor038
+    400362: Tenedor039
+    400364: Tenedor040
+    400366: Tenedor041
+    400368: Tenedor042
+    400370: Tenedor043
+    400372: Tenedor044
+    400374: Tenedor045
+    400376: Tenedor046
+    400378: Tenedor047
+    400380: Tenedor048
+    400382: Tenedor049
+    400384: Tenedor050
+    400386: Tenedor051
+    400388: Tenedor052
+    400390: Tenedor053
+    400392: Tenedor054
+    400394: Tenedor055
+    400396: Tenedor056
+    400398: Tenedor057
+    400400: Tenedor058
+    400402: Tenedor059
+    400404: Tenedor060
+    400406: Tenedor061
+    400408: Tenedor062
+    400410: Tenedor063
+    400412: Tenedor064
+    400414: Tenedor065
+    400416: Tenedor066
+    400418: Tenedor067
+    400420: Tenedor068
+    400422: Tenedor069
+    400424: Tenedor070
+    400426: Tenedor071
+    400428: Tenedores
+    400430: Vaso
+    400432: Vaso001
+    400434: Vaso002
+    400436: Vaso003
+    400438: Vaso004
+    400440: Vaso005
+    400442: Vaso006
+    400444: Vaso007
+    400446: Vaso008
+    400448: Vaso009
+    400450: Vaso010
+    400452: Vaso011
+    400454: Vaso012
+    400456: Vaso013
+    400458: Vaso014
+    400460: Vaso015
+    400462: Vaso016
+    400464: Vaso017
+    400466: Vaso018
+    400468: Vaso019
+    400470: Vaso020
+    400472: Vaso021
+    400474: Vaso022
+    400476: Vaso023
+    400478: Vaso024
+    400480: Vaso025
+    400482: Vaso026
+    400484: Vasos
+    400486: Tazas
+    2300000: Bowl 002
+    2300002: Bowl 003
+    2300004: Bowl 004
+    2300006: Bowl 005
+    2300008: Bowl 006
+    2300010: Bowl 007
+    2300012: Bowl 008
+    2300014: Bowl 009
+    2300016: Bowl 010
+    2300018: Bowl 011
+    2300020: Bowl 012
+    2300022: Bowl 013
+    2300024: Bowl 014
+    2300026: Bowl 015
+    2300028: Bowl 016
+    2300030: Bowl 017
+    2300032: Bowl 018
+    2300034: Bowl 019
+    2300036: Bowl 020
+    2300038: Bowl 021
+    2300040: Bowl 022
+    2300042: Bowl 023
+    2300044: Bowl 024
+    2300046: Bowl 025
+    2300048: Bowl 026
+    2300050: Bowl 027
+    2300052: Bowl 028
+    2300054: Bowl 1
+    2300056: Copa
+    2300058: Copa001
+    2300060: Copa002
+    2300062: Copa003
+    2300064: Copa004
+    2300066: Copa005
+    2300068: Copa006
+    2300070: Copa007
+    2300072: Copa008
+    2300074: Copa009
+    2300076: Cuchara
+    2300078: Cuchara001
+    2300080: Cuchara002
+    2300082: Cuchara003
+    2300084: Cuchara004
+    2300086: Cuchara005
+    2300088: Cuchara006
+    2300090: Cuchara007
+    2300092: Cuchara008
+    2300094: Cuchara009
+    2300096: Cuchara010
+    2300098: Cuchara011
+    2300100: Cuchara013
+    2300102: Cuchara014
+    2300104: Cuchara015
+    2300106: Cucharit10
+    2300108: Cucharita0
+    2300110: Cucharita1
+    2300112: Cucharita2
+    2300114: Cucharita3
+    2300116: Cucharita4
+    2300118: Cucharita5
+    2300120: Cucharita6
+    2300122: Cucharita7
+    2300124: Cucharita8
+    2300126: Cucharita9
+    2300128: Cuchillo
+    2300130: Cuchillo00
+    2300132: Cuchillo01
+    2300134: Cuchillo02
+    2300136: Cuchillo03
+    2300138: Cuchillo04
+    2300140: Cuchillo05
+    2300142: Cuchillo06
+    2300144: Cuchillo07
+    2300146: Cuchillo08
+    2300148: Cuchillo09
+    2300150: Cuchillo10
+    2300152: Cuchillo11
+    2300154: Cuchillo12
+    2300156: Cuchillo13
+    2300158: Cuchillo14
+    2300160: Cuchillo15
+    2300162: Cuchillo16
+    2300164: Cuchillo17
+    2300166: Cuchillo18
+    2300168: Plato 002
+    2300170: Plato 003
+    2300172: Plato 004
+    2300174: Plato 005
+    2300176: Plato 006
+    2300178: Plato 007
+    2300180: Plato 008
+    2300182: Plato 009
+    2300184: Plato 010
+    2300186: Plato 011
+    2300188: Plato 012
+    2300190: Plato 013
+    2300192: Plato 014
+    2300194: Plato 015
+    2300196: Plato 016
+    2300198: Plato 017
+    2300200: Plato 018
+    2300202: Plato 019
+    2300204: Plato 020
+    2300206: Plato 021
+    2300208: Plato 022
+    2300210: Plato 023
+    2300212: Plato 024
+    2300214: Plato 025
+    2300216: Plato 026
+    2300218: Plato 027
+    2300220: Plato 028
+    2300222: Plato 029
+    2300224: Plato 030
+    2300226: Plato 031
+    2300228: Plato 032
+    2300230: Plato 1
+    2300232: Taza001
+    2300234: Taza002
+    2300236: Taza003
+    2300238: Taza004
+    2300240: Taza005
+    2300242: Taza006
+    2300244: Taza007
+    2300246: Taza008
+    2300248: Taza009
+    2300250: Taza010
+    2300252: Taza011
+    2300254: Taza012
+    2300256: Taza013
+    2300258: Taza014
+    2300260: Taza015
+    2300262: Taza016
+    2300264: Taza017
+    2300266: Taza018
+    2300268: Taza019
+    2300270: Taza020
+    2300272: Tenedor001
+    2300274: Tenedor002
+    2300276: Tenedor003
+    2300278: Tenedor004
+    2300280: Tenedor005
+    2300282: Tenedor006
+    2300284: Tenedor007
+    2300286: Tenedor008
+    2300288: Tenedor009
+    2300290: Tenedor010
+    2300292: Tenedor011
+    2300294: Tenedor012
+    2300296: Tenedor013
+    2300298: Tenedor014
+    2300300: Tenedor015
+    2300302: Tenedor016
+    2300304: Tenedor017
+    2300306: Tenedor018
+    2300308: Tenedor019
+    2300310: Tenedor020
+    2300312: Tenedor021
+    2300314: Tenedor022
+    2300316: Tenedor023
+    2300318: Tenedor024
+    2300320: Tenedor025
+    2300322: Tenedor026
+    2300324: Tenedor027
+    2300326: Tenedor028
+    2300328: Tenedor029
+    2300330: Tenedor030
+    2300332: Tenedor031
+    2300334: Tenedor032
+    2300336: Tenedor033
+    2300338: Tenedor034
+    2300340: Tenedor035
+    2300342: Tenedor036
+    2300344: Tenedor037
+    2300346: Tenedor038
+    2300348: Tenedor039
+    2300350: Tenedor040
+    2300352: Tenedor041
+    2300354: Tenedor042
+    2300356: Tenedor043
+    2300358: Tenedor044
+    2300360: Tenedor045
+    2300362: Tenedor046
+    2300364: Tenedor047
+    2300366: Tenedor048
+    2300368: Tenedor049
+    2300370: Tenedor050
+    2300372: Tenedor051
+    2300374: Tenedor052
+    2300376: Tenedor053
+    2300378: Tenedor054
+    2300380: Tenedor055
+    2300382: Tenedor056
+    2300384: Tenedor057
+    2300386: Tenedor058
+    2300388: Tenedor059
+    2300390: Tenedor060
+    2300392: Tenedor061
+    2300394: Tenedor062
+    2300396: Tenedor063
+    2300398: Tenedor064
+    2300400: Tenedor065
+    2300402: Tenedor066
+    2300404: Tenedor067
+    2300406: Tenedor068
+    2300408: Tenedor069
+    2300410: Tenedor070
+    2300412: Tenedor071
+    2300414: Vaso
+    2300416: Vaso001
+    2300418: Vaso002
+    2300420: Vaso003
+    2300422: Vaso004
+    2300424: Vaso005
+    2300426: Vaso006
+    2300428: Vaso007
+    2300430: Vaso008
+    2300432: Vaso009
+    2300434: Vaso010
+    2300436: Vaso011
+    2300438: Vaso012
+    2300440: Vaso013
+    2300442: Vaso014
+    2300444: Vaso015
+    2300446: Vaso016
+    2300448: Vaso017
+    2300450: Vaso018
+    2300452: Vaso019
+    2300454: Vaso020
+    2300456: Vaso021
+    2300458: Vaso022
+    2300460: Vaso023
+    2300462: Vaso024
+    2300464: Vaso025
+    2300466: Vaso026
+    3300000: Bowl 002
+    3300002: Bowl 003
+    3300004: Bowl 004
+    3300006: Bowl 005
+    3300008: Bowl 006
+    3300010: Bowl 007
+    3300012: Bowl 008
+    3300014: Bowl 009
+    3300016: Bowl 010
+    3300018: Bowl 011
+    3300020: Bowl 012
+    3300022: Bowl 013
+    3300024: Bowl 014
+    3300026: Bowl 015
+    3300028: Bowl 016
+    3300030: Bowl 017
+    3300032: Bowl 018
+    3300034: Bowl 019
+    3300036: Bowl 020
+    3300038: Bowl 021
+    3300040: Bowl 022
+    3300042: Bowl 023
+    3300044: Bowl 024
+    3300046: Bowl 025
+    3300048: Bowl 026
+    3300050: Bowl 027
+    3300052: Bowl 028
+    3300054: Bowl 1
+    3300056: Copa
+    3300058: Copa001
+    3300060: Copa002
+    3300062: Copa003
+    3300064: Copa004
+    3300066: Copa005
+    3300068: Copa006
+    3300070: Copa007
+    3300072: Copa008
+    3300074: Copa009
+    3300076: Cuchara
+    3300078: Cuchara001
+    3300080: Cuchara002
+    3300082: Cuchara003
+    3300084: Cuchara004
+    3300086: Cuchara005
+    3300088: Cuchara006
+    3300090: Cuchara007
+    3300092: Cuchara008
+    3300094: Cuchara009
+    3300096: Cuchara010
+    3300098: Cuchara011
+    3300100: Cuchara013
+    3300102: Cuchara014
+    3300104: Cuchara015
+    3300106: Cucharit10
+    3300108: Cucharita0
+    3300110: Cucharita1
+    3300112: Cucharita2
+    3300114: Cucharita3
+    3300116: Cucharita4
+    3300118: Cucharita5
+    3300120: Cucharita6
+    3300122: Cucharita7
+    3300124: Cucharita8
+    3300126: Cucharita9
+    3300128: Cuchillo
+    3300130: Cuchillo00
+    3300132: Cuchillo01
+    3300134: Cuchillo02
+    3300136: Cuchillo03
+    3300138: Cuchillo04
+    3300140: Cuchillo05
+    3300142: Cuchillo06
+    3300144: Cuchillo07
+    3300146: Cuchillo08
+    3300148: Cuchillo09
+    3300150: Cuchillo10
+    3300152: Cuchillo11
+    3300154: Cuchillo12
+    3300156: Cuchillo13
+    3300158: Cuchillo14
+    3300160: Cuchillo15
+    3300162: Cuchillo16
+    3300164: Cuchillo17
+    3300166: Cuchillo18
+    3300168: Plato 002
+    3300170: Plato 003
+    3300172: Plato 004
+    3300174: Plato 005
+    3300176: Plato 006
+    3300178: Plato 007
+    3300180: Plato 008
+    3300182: Plato 009
+    3300184: Plato 010
+    3300186: Plato 011
+    3300188: Plato 012
+    3300190: Plato 013
+    3300192: Plato 014
+    3300194: Plato 015
+    3300196: Plato 016
+    3300198: Plato 017
+    3300200: Plato 018
+    3300202: Plato 019
+    3300204: Plato 020
+    3300206: Plato 021
+    3300208: Plato 022
+    3300210: Plato 023
+    3300212: Plato 024
+    3300214: Plato 025
+    3300216: Plato 026
+    3300218: Plato 027
+    3300220: Plato 028
+    3300222: Plato 029
+    3300224: Plato 030
+    3300226: Plato 031
+    3300228: Plato 032
+    3300230: Plato 1
+    3300232: Taza001
+    3300234: Taza002
+    3300236: Taza003
+    3300238: Taza004
+    3300240: Taza005
+    3300242: Taza006
+    3300244: Taza007
+    3300246: Taza008
+    3300248: Taza009
+    3300250: Taza010
+    3300252: Taza011
+    3300254: Taza012
+    3300256: Taza013
+    3300258: Taza014
+    3300260: Taza015
+    3300262: Taza016
+    3300264: Taza017
+    3300266: Taza018
+    3300268: Taza019
+    3300270: Taza020
+    3300272: Tenedor001
+    3300274: Tenedor002
+    3300276: Tenedor003
+    3300278: Tenedor004
+    3300280: Tenedor005
+    3300282: Tenedor006
+    3300284: Tenedor007
+    3300286: Tenedor008
+    3300288: Tenedor009
+    3300290: Tenedor010
+    3300292: Tenedor011
+    3300294: Tenedor012
+    3300296: Tenedor013
+    3300298: Tenedor014
+    3300300: Tenedor015
+    3300302: Tenedor016
+    3300304: Tenedor017
+    3300306: Tenedor018
+    3300308: Tenedor019
+    3300310: Tenedor020
+    3300312: Tenedor021
+    3300314: Tenedor022
+    3300316: Tenedor023
+    3300318: Tenedor024
+    3300320: Tenedor025
+    3300322: Tenedor026
+    3300324: Tenedor027
+    3300326: Tenedor028
+    3300328: Tenedor029
+    3300330: Tenedor030
+    3300332: Tenedor031
+    3300334: Tenedor032
+    3300336: Tenedor033
+    3300338: Tenedor034
+    3300340: Tenedor035
+    3300342: Tenedor036
+    3300344: Tenedor037
+    3300346: Tenedor038
+    3300348: Tenedor039
+    3300350: Tenedor040
+    3300352: Tenedor041
+    3300354: Tenedor042
+    3300356: Tenedor043
+    3300358: Tenedor044
+    3300360: Tenedor045
+    3300362: Tenedor046
+    3300364: Tenedor047
+    3300366: Tenedor048
+    3300368: Tenedor049
+    3300370: Tenedor050
+    3300372: Tenedor051
+    3300374: Tenedor052
+    3300376: Tenedor053
+    3300378: Tenedor054
+    3300380: Tenedor055
+    3300382: Tenedor056
+    3300384: Tenedor057
+    3300386: Tenedor058
+    3300388: Tenedor059
+    3300390: Tenedor060
+    3300392: Tenedor061
+    3300394: Tenedor062
+    3300396: Tenedor063
+    3300398: Tenedor064
+    3300400: Tenedor065
+    3300402: Tenedor066
+    3300404: Tenedor067
+    3300406: Tenedor068
+    3300408: Tenedor069
+    3300410: Tenedor070
+    3300412: Tenedor071
+    3300414: Vaso
+    3300416: Vaso001
+    3300418: Vaso002
+    3300420: Vaso003
+    3300422: Vaso004
+    3300424: Vaso005
+    3300426: Vaso006
+    3300428: Vaso007
+    3300430: Vaso008
+    3300432: Vaso009
+    3300434: Vaso010
+    3300436: Vaso011
+    3300438: Vaso012
+    3300440: Vaso013
+    3300442: Vaso014
+    3300444: Vaso015
+    3300446: Vaso016
+    3300448: Vaso017
+    3300450: Vaso018
+    3300452: Vaso019
+    3300454: Vaso020
+    3300456: Vaso021
+    3300458: Vaso022
+    3300460: Vaso023
+    3300462: Vaso024
+    3300464: Vaso025
+    3300466: Vaso026
+    4300000: Bowl 1
+    4300002: Bowl 002
+    4300004: Bowl 003
+    4300006: Bowl 004
+    4300008: Bowl 005
+    4300010: Bowl 006
+    4300012: Bowl 007
+    4300014: Bowl 008
+    4300016: Bowl 009
+    4300018: Bowl 010
+    4300020: Bowl 011
+    4300022: Bowl 012
+    4300024: Bowl 013
+    4300026: Bowl 014
+    4300028: Bowl 015
+    4300030: Bowl 016
+    4300032: Bowl 017
+    4300034: Bowl 018
+    4300036: Bowl 019
+    4300038: Bowl 020
+    4300040: Bowl 021
+    4300042: Bowl 022
+    4300044: Bowl 023
+    4300046: Bowl 024
+    4300048: Bowl 025
+    4300050: Bowl 026
+    4300052: Bowl 027
+    4300054: Bowl 028
+    4300056: Copa
+    4300058: Copa001
+    4300060: Copa002
+    4300062: Copa003
+    4300064: Copa004
+    4300066: Copa005
+    4300068: Copa006
+    4300070: Copa007
+    4300072: Copa008
+    4300074: Copa009
+    4300076: Cuchara
+    4300078: Cuchara001
+    4300080: Cuchara002
+    4300082: Cuchara003
+    4300084: Cuchara004
+    4300086: Cuchara005
+    4300088: Cuchara006
+    4300090: Cuchara007
+    4300092: Cuchara008
+    4300094: Cuchara009
+    4300096: Cuchara010
+    4300098: Cuchara011
+    4300100: Cuchara013
+    4300102: Cuchara014
+    4300104: Cuchara015
+    4300106: Cucharita0
+    4300108: Cucharita1
+    4300110: Cucharita2
+    4300112: Cucharita3
+    4300114: Cucharita4
+    4300116: Cucharita5
+    4300118: Cucharita6
+    4300120: Cucharita7
+    4300122: Cucharita8
+    4300124: Cucharita9
+    4300126: Cucharit10
+    4300128: Cuchillo
+    4300130: Cuchillo00
+    4300132: Cuchillo01
+    4300134: Cuchillo02
+    4300136: Cuchillo03
+    4300138: Cuchillo04
+    4300140: Cuchillo05
+    4300142: Cuchillo06
+    4300144: Cuchillo07
+    4300146: Cuchillo08
+    4300148: Cuchillo09
+    4300150: Cuchillo10
+    4300152: Cuchillo11
+    4300154: Cuchillo12
+    4300156: Cuchillo13
+    4300158: Cuchillo14
+    4300160: Cuchillo15
+    4300162: Cuchillo16
+    4300164: Cuchillo17
+    4300166: Cuchillo18
+    4300168: Plato 1
+    4300170: Plato 002
+    4300172: Plato 003
+    4300174: Plato 004
+    4300176: Plato 005
+    4300178: Plato 006
+    4300180: Plato 007
+    4300182: Plato 008
+    4300184: Plato 009
+    4300186: Plato 010
+    4300188: Plato 011
+    4300190: Plato 012
+    4300192: Plato 013
+    4300194: Plato 014
+    4300196: Plato 015
+    4300198: Plato 016
+    4300200: Plato 017
+    4300202: Plato 018
+    4300204: Plato 019
+    4300206: Plato 020
+    4300208: Plato 021
+    4300210: Plato 022
+    4300212: Plato 023
+    4300214: Plato 024
+    4300216: Plato 025
+    4300218: Plato 026
+    4300220: Plato 027
+    4300222: Plato 028
+    4300224: Plato 029
+    4300226: Plato 030
+    4300228: Plato 031
+    4300230: Plato 032
+    4300232: Tenedor001
+    4300234: Tenedor002
+    4300236: Tenedor003
+    4300238: Tenedor004
+    4300240: Tenedor005
+    4300242: Tenedor006
+    4300244: Tenedor007
+    4300246: Tenedor008
+    4300248: Tenedor009
+    4300250: Tenedor010
+    4300252: Tenedor011
+    4300254: Tenedor012
+    4300256: Tenedor013
+    4300258: Tenedor014
+    4300260: Tenedor015
+    4300262: Tenedor016
+    4300264: Tenedor017
+    4300266: Tenedor018
+    4300268: Tenedor019
+    4300270: Tenedor020
+    4300272: Tenedor021
+    4300274: Tenedor022
+    4300276: Tenedor023
+    4300278: Tenedor024
+    4300280: Tenedor025
+    4300282: Tenedor026
+    4300284: Tenedor027
+    4300286: Tenedor028
+    4300288: Tenedor029
+    4300290: Tenedor030
+    4300292: Tenedor031
+    4300294: Tenedor032
+    4300296: Tenedor033
+    4300298: Tenedor034
+    4300300: Tenedor035
+    4300302: Tenedor036
+    4300304: Tenedor037
+    4300306: Tenedor038
+    4300308: Tenedor039
+    4300310: Tenedor040
+    4300312: Tenedor041
+    4300314: Tenedor042
+    4300316: Tenedor043
+    4300318: Tenedor044
+    4300320: Tenedor045
+    4300322: Tenedor046
+    4300324: Tenedor047
+    4300326: Tenedor048
+    4300328: Tenedor049
+    4300330: Tenedor050
+    4300332: Tenedor051
+    4300334: Tenedor052
+    4300336: Tenedor053
+    4300338: Tenedor054
+    4300340: Tenedor055
+    4300342: Tenedor056
+    4300344: Tenedor057
+    4300346: Tenedor058
+    4300348: Tenedor059
+    4300350: Tenedor060
+    4300352: Tenedor061
+    4300354: Tenedor062
+    4300356: Tenedor063
+    4300358: Tenedor064
+    4300360: Tenedor065
+    4300362: Tenedor066
+    4300364: Tenedor067
+    4300366: Tenedor068
+    4300368: Tenedor069
+    4300370: Tenedor070
+    4300372: Tenedor071
+    4300374: Vaso026
+    4300376: Vaso
+    4300378: Vaso001
+    4300380: Vaso002
+    4300382: Vaso003
+    4300384: Vaso004
+    4300386: Vaso005
+    4300388: Vaso006
+    4300390: Vaso007
+    4300392: Vaso008
+    4300394: Vaso009
+    4300396: Vaso010
+    4300398: Vaso011
+    4300400: Vaso012
+    4300402: Vaso013
+    4300404: Vaso014
+    4300406: Vaso015
+    4300408: Vaso016
+    4300410: Vaso017
+    4300412: Vaso018
+    4300414: Vaso019
+    4300416: Vaso020
+    4300418: Vaso021
+    4300420: Vaso022
+    4300422: Vaso023
+    4300424: Vaso024
+    4300426: Vaso025
+    4300428: Taza001
+    4300430: Taza002
+    4300432: Taza003
+    4300434: Taza004
+    4300436: Taza005
+    4300438: Taza006
+    4300440: Taza007
+    4300442: Taza008
+    4300444: Taza009
+    4300446: Taza010
+    4300448: Taza011
+    4300450: Taza012
+    4300452: Taza013
+    4300454: Taza014
+    4300456: Taza015
+    4300458: Taza016
+    4300460: Taza017
+    4300462: Taza018
+    4300464: Taza019
+    4300466: Taza020
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

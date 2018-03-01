@@ -1,0 +1,30 @@
+Entidad	TipConditionId	descripcion del nivel	Nivel	Pista
+Arma	NoInv	No tenes le objeto en el invetario	1	Wow no se como murio esa señora pero estoy seguro que no la mataron solo con las manos.
+Arma	NoInv	Pistas sobre donde esta el objeto	2	Te ves cansado talvez necesitas dormir un poco.
+Arma	NoInv		2	Ay por dios! esas camas no estan arregladas! Arreglalas!
+Arma	MalaElecc	Cuando tenes el objeto, pero pones otro	3	No, esa arma no es. 
+Arma	MalaElecc		3	Se usan cuando no tenes botones por alguna razon
+Arma	MalaElecc	Pistas de cual es	4	Se usan en invierno
+Arma	MalaElecc		4	Creo que el arma esta hecha 100% de algodon.
+Arma	MalaElecc	esplicitamente que es	5	La bufanda LA BUFANDA! perdon la cinta de tapado
+Arma	MalaElecc		5	La cinta "de tapado"...el arama omicida mas estupida que existe. Eso y los cornalitos. 
+Sospechoso	NoInv	No tenes le objeto en el invetario	1	Se que hay fanaticos de los palmitos por ahi afuera, pero aun asi tienes que hablar con todos.
+Sospechoso	NoInv	Pistas sobre donde esta el objeto	2	Cielos! Estar parado todo el dia cansa mucho...mejor vete a sentar.
+Sospechoso	NoInv		2	Hay un asiento libre en frente de esas dos hermosas señoritas.
+Sospechoso	MalaElecc	Cuando tenes el objeto, pero pones otro	3	No, esa persona no fue.
+Sospechoso	MalaElecc		3	No,no, fue otra persona claramente. 
+Sospechoso	MalaElecc	Pistas de cual es	4	TIene cara de ser una perra.
+Sospechoso	MalaElecc		4	Tiene pelo largo y cedoso.
+Sospechoso	MalaElecc	esplicitamente que es	5	Looolaaaaaaaa.
+Sospechoso	MalaElecc		5	Es lola.
+Motivo	NoInv	No tenes el texto en el invetario	1	Tienes que seguir hablando con gente.
+Motivo	NoInv	Pistas sobre como objetenerl (persona con quien hablar o objeto que tocar)	2	Hay un asiento libre en frente de esas dos hermosas señoritas.
+Motivo	NoInv		2	Cielos! Estar parado todo el dia cansa mucho...mejor vete a sentar.
+Motivo	MalaElecc	Cuando tenes el texto, pero seccionas otro	3	Vamos tu sabes que no fue esa hipotesis.
+Motivo	MalaElecc		3	Nop, intenta con otra hipotesis.
+Motivo	MalaElecc	Pistas de cual es	4	"Money it's a gas" - Pink Floyd
+Motivo	MalaElecc		4	A veces a los campos tambien se le llaman...
+Motivo	MalaElecc	esplicitamente que es	5	Fue por la herencia
+Motivo	MalaElecc		5	Es por la herencia, la gente solo busca dinero.
+Evidencia	EvIncomp	Te falta evidencias	1	Te faltan evidencias
+Evidencia	EvMal	Tenes falsa evidencias	2	Alguna evidencia no esta correcta

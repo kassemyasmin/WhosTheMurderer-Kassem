@@ -1,0 +1,30 @@
+Entidad	TipConditionId	descripcion del nivel	Nivel	Pista																							
+Arma	NoInv	No tenes le objeto en el invetario	1	Mmmm...¿dices que le atraveso el cuello con la vista?																							
+Arma	NoInv	Pistas sobre donde esta el objeto	2	Debajo de las mesas siempre hay cosas interesantes....cuidado con los duendes.																							
+Arma	NoInv		2	Oh disculpe creo que se me cayo un objeto debajo de la mesa...me inclinare a recogerlo.																							
+Arma	MalaElecc	"Cuando tenes el objeto, pero pones otro"	3	¿Realmente crees que esa es el arma?																							
+Arma	MalaElecc		3	"Se pueden matar a las personas con muchas armas, pero esa no es una de ellas"																							
+Arma	MalaElecc	Pistas de cual es	4	"Se la suelen regalar a los abogados cuando se ""graduan"" "																							
+Arma	MalaElecc		4	¿Sabes quien es el mejor superheroe? pues Peter PARKER por supuesto. 																							
+Arma	NoCondicion	esplicitamente que es	5	Si llegaste hasta aca entonces felicidadades eres un completo idiota...es la lapicera. 																							
+Arma	NoCondicion		5	No se como dejar mas claro que es la lapicera...hice demasiado enfasis en eso.																							
+Sospechoso	NoInv	No tenes le objeto en el invetario	1	Asegurate de que hablaste con todos...El mundo es un lugar muy solitario.																							
+Sospechoso	NoInv	Pistas sobre donde esta el objeto	2	Cielos! Estar parado todo el dia cansa mucho...mejor vete a sentar.																							
+Sospechoso	NoInv		2	Cuando viajo en tren me gusta sentarme del lado derecho del tren...siempre hay una linda vista.																							
+Sospechoso	MalaElecc	"Cuando tenes el objeto, pero pones otro"	3	Intenta con otra persona...imbecil.																							
+Sospechoso	MalaElecc		3	Cualquiera en la sala pudo haber sido...cualquiera menos esa persona. 																							
+Sospechoso	MalaElecc	Pistas de cual es	4	"""Big black boots, long brown hair"" - Jet"																							
+Sospechoso	MalaElecc		4	Si yo hubiera asesinado a alguien asi no me sentiria muy comodo conmigo mismo.																							
+Sospechoso	NoCondicion	esplicitamente que es	5	Es laura...se ve a 200 metros de distancia. 																							
+Sospechoso	NoCondicion		5	"Es laura! solo mirala, le da verguenza saber que ni pudiste averiguarlo por ti mismo. "																							
+Motivo	NoInv	No tenes el texto en el invetario	1	Asegurate de que hablaste con todos...El mundo es un lugar muy solitario.																							
+Motivo	NoInv	Pistas sobre como objetenerl (persona con quien hablar o objeto que tocar)	2	Cielos! Estar parado todo el dia cansa mucho...mejor vete a sentar.																							
+Motivo	NoInv		2	Cuando viajo en tren me gusta sentarme del lado derecho del tren...siempre hay una linda vista.																							
+Motivo	MalaElecc	"Cuando tenes el texto, pero seccionas otro"	3	Intenta con otra persona...imbecil.																							
+Motivo	MalaElecc		3	Cualquiera en la sala pudo haber sido...cualquiera menos esa persona. 																							
+Motivo	MalaElecc	Pistas de cual es	4	"""Big black boots, long brown hair"" - Jet"																							
+Motivo	MalaElecc		4	Si yo hubiera asesinado a alguien asi no me sentiria muy comodo conmigo mismo.																							
+Motivo	NoCondicion	esplicitamente que es	5	Es laura...se ve a 200 metros de distancia. 																							
+Motivo	NoCondicion		5	"Es laura! solo mirala, le da verguenza saber que ni pudiste averiguarlo por ti mismo. "																							
+Evidencia	EvIncomp	Te falta evidencias	1	Te faltan evidencias																							
+Evidencia	EvMal	Tenes falsa evidencias	2	Alguna evidencia no esta correcta																							

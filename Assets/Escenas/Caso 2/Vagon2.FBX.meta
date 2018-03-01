@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: 171dcb4f30983db46be6d18132302713
+timeCreated: 1474213649
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Almohadon1
+    100004: Almohadon2
+    100006: ApoyaBrazos
+    100008: ApoyaBrazos 1
+    100010: ApoyaBrazos 2
+    100012: ApoyaBrazos 3
+    100014: ApoyaBrazos001
+    100016: ApoyaBrazos002
+    100018: ApoyaBrazos003
+    100020: ApoyaBrazos004
+    100022: ApoyaBrazos005
+    100024: ApoyaBrazos006
+    100026: ApoyaBrazos007
+    100028: ApoyaBrazos008
+    100030: ApoyaBrazos009
+    100032: ApoyaBrazos010
+    100034: ApoyaBrazos011
+    100036: ApoyaBrazos012
+    100038: Asiento002
+    100040: Asiento003
+    100042: Asiento004
+    100044: Asiento005
+    100046: Asiento006
+    100048: Asiento007
+    100050: Asiento008
+    100052: Asiento1
+    100054: asiento1
+    100056: asiento2
+    100058: Cama parte abajo
+    100060: Cama parte arriba
+    100062: CortinaCamarote1
+    100064: CortinaCamarote10
+    100066: CortinaCamarote10_MeshPart0
+    100068: CortinaCamarote10_MeshPart1
+    100070: CortinaCamarote11
+    100072: CortinaCamarote11_MeshPart0
+    100074: CortinaCamarote11_MeshPart1
+    100076: CortinaCamarote12
+    100078: CortinaCamarote12_MeshPart0
+    100080: CortinaCamarote12_MeshPart1
+    100082: CortinaCamarote1_MeshPart0
+    100084: CortinaCamarote1_MeshPart1
+    100086: CortinaCamarote3
+    100088: CortinaCamarote3_MeshPart0
+    100090: CortinaCamarote3_MeshPart1
+    100092: CortinaCamarote4
+    100094: CortinaCamarote4_MeshPart0
+    100096: CortinaCamarote4_MeshPart1
+    100098: CortinaCamarote5
+    100100: CortinaCamarote5_MeshPart0
+    100102: CortinaCamarote5_MeshPart1
+    100104: CortinaCamarote6
+    100106: CortinaCamarote6_MeshPart0
+    100108: CortinaCamarote6_MeshPart1
+    100110: CortinaCamarote7
+    100112: CortinaCamarote7_MeshPart0
+    100114: CortinaCamarote7_MeshPart1
+    100116: CortinaCamarote8
+    100118: CortinaCamarote8_MeshPart0
+    100120: CortinaCamarote8_MeshPart1
+    100122: CortinaCamarote9
+    100124: CortinaCamarote9_MeshPart0
+    100126: CortinaCamarote9_MeshPart1
+    100128: Divisiones pasillo
+    100130: Mesa
+    100132: Mesa001
+    100134: Mueble_camarote
+    100136: PaloCortina
+    100138: PaloCortina001
+    100140: PaloCortina002
+    100142: PaloCortina003
+    100144: PaloCortina004
+    100146: PaloCortina005
+    100148: Pl_cajonAbajo
+    100150: Pl_cajonArriba
+    100152: Pl_puerta_abajoDerecha
+    100154: Pl_puerta_abajoIzquierda
+    100156: Pl_puerta_arribaDerecha
+    100158: Pl_puerta_arribaIzquierda
+    100160: Puerta_1_Derecha
+    100162: Puerta_1_Derecha001
+    100164: Puerta_1_Derecha002
+    100166: Puerta_1_Izquierda
+    100168: Puerta_1_Izquierda001
+    100170: Puerta_1_Izquierda002
+    100172: Sillon camarote
+    100174: Soporte Silla
+    100176: Soporte Silla 1
+    100178: Soporte Silla 2
+    100180: Soporte Silla 3
+    100182: Soporte Silla001
+    100184: Soporte Silla002
+    100186: Soporte Silla003
+    100188: Soporte Silla004
+    100190: Soporte Silla005
+    100192: Soporte Silla006
+    100194: Soporte Silla007
+    100196: Soporte Silla008
+    100198: Soporte Silla009
+    100200: Soporte Silla010
+    100202: Soporte Silla011
+    100204: Soporte Silla012
+    100206: vagon
+    100208: vagon_MeshPart0
+    100210: vagon_MeshPart1
+    400000: //RootNode
+    400002: Almohadon1
+    400004: Almohadon2
+    400006: ApoyaBrazos
+    400008: ApoyaBrazos 1
+    400010: ApoyaBrazos 2
+    400012: ApoyaBrazos 3
+    400014: ApoyaBrazos001
+    400016: ApoyaBrazos002
+    400018: ApoyaBrazos003
+    400020: ApoyaBrazos004
+    400022: ApoyaBrazos005
+    400024: ApoyaBrazos006
+    400026: ApoyaBrazos007
+    400028: ApoyaBrazos008
+    400030: ApoyaBrazos009
+    400032: ApoyaBrazos010
+    400034: ApoyaBrazos011
+    400036: ApoyaBrazos012
+    400038: Asiento002
+    400040: Asiento003
+    400042: Asiento004
+    400044: Asiento005
+    400046: Asiento006
+    400048: Asiento007
+    400050: Asiento008
+    400052: Asiento1
+    400054: asiento1
+    400056: asiento2
+    400058: Cama parte abajo
+    400060: Cama parte arriba
+    400062: CortinaCamarote1
+    400064: CortinaCamarote10
+    400066: CortinaCamarote10_MeshPart0
+    400068: CortinaCamarote10_MeshPart1
+    400070: CortinaCamarote11
+    400072: CortinaCamarote11_MeshPart0
+    400074: CortinaCamarote11_MeshPart1
+    400076: CortinaCamarote12
+    400078: CortinaCamarote12_MeshPart0
+    400080: CortinaCamarote12_MeshPart1
+    400082: CortinaCamarote1_MeshPart0
+    400084: CortinaCamarote1_MeshPart1
+    400086: CortinaCamarote3
+    400088: CortinaCamarote3_MeshPart0
+    400090: CortinaCamarote3_MeshPart1
+    400092: CortinaCamarote4
+    400094: CortinaCamarote4_MeshPart0
+    400096: CortinaCamarote4_MeshPart1
+    400098: CortinaCamarote5
+    400100: CortinaCamarote5_MeshPart0
+    400102: CortinaCamarote5_MeshPart1
+    400104: CortinaCamarote6
+    400106: CortinaCamarote6_MeshPart0
+    400108: CortinaCamarote6_MeshPart1
+    400110: CortinaCamarote7
+    400112: CortinaCamarote7_MeshPart0
+    400114: CortinaCamarote7_MeshPart1
+    400116: CortinaCamarote8
+    400118: CortinaCamarote8_MeshPart0
+    400120: CortinaCamarote8_MeshPart1
+    400122: CortinaCamarote9
+    400124: CortinaCamarote9_MeshPart0
+    400126: CortinaCamarote9_MeshPart1
+    400128: Divisiones pasillo
+    400130: Mesa
+    400132: Mesa001
+    400134: Mueble_camarote
+    400136: PaloCortina
+    400138: PaloCortina001
+    400140: PaloCortina002
+    400142: PaloCortina003
+    400144: PaloCortina004
+    400146: PaloCortina005
+    400148: Pl_cajonAbajo
+    400150: Pl_cajonArriba
+    400152: Pl_puerta_abajoDerecha
+    400154: Pl_puerta_abajoIzquierda
+    400156: Pl_puerta_arribaDerecha
+    400158: Pl_puerta_arribaIzquierda
+    400160: Puerta_1_Derecha
+    400162: Puerta_1_Derecha001
+    400164: Puerta_1_Derecha002
+    400166: Puerta_1_Izquierda
+    400168: Puerta_1_Izquierda001
+    400170: Puerta_1_Izquierda002
+    400172: Sillon camarote
+    400174: Soporte Silla
+    400176: Soporte Silla 1
+    400178: Soporte Silla 2
+    400180: Soporte Silla 3
+    400182: Soporte Silla001
+    400184: Soporte Silla002
+    400186: Soporte Silla003
+    400188: Soporte Silla004
+    400190: Soporte Silla005
+    400192: Soporte Silla006
+    400194: Soporte Silla007
+    400196: Soporte Silla008
+    400198: Soporte Silla009
+    400200: Soporte Silla010
+    400202: Soporte Silla011
+    400204: Soporte Silla012
+    400206: vagon
+    400208: vagon_MeshPart0
+    400210: vagon_MeshPart1
+    2300000: //RootNode
+    2300002: Almohadon1
+    2300004: Almohadon2
+    2300006: ApoyaBrazos
+    2300008: ApoyaBrazos 1
+    2300010: ApoyaBrazos 2
+    2300012: ApoyaBrazos 3
+    2300014: ApoyaBrazos001
+    2300016: ApoyaBrazos002
+    2300018: ApoyaBrazos003
+    2300020: ApoyaBrazos004
+    2300022: ApoyaBrazos005
+    2300024: ApoyaBrazos006
+    2300026: ApoyaBrazos007
+    2300028: ApoyaBrazos008
+    2300030: ApoyaBrazos009
+    2300032: ApoyaBrazos010
+    2300034: ApoyaBrazos011
+    2300036: ApoyaBrazos012
+    2300038: Asiento002
+    2300040: Asiento003
+    2300042: Asiento004
+    2300044: Asiento005
+    2300046: Asiento006
+    2300048: Asiento007
+    2300050: Asiento008
+    2300052: Asiento1
+    2300054: Cama parte abajo
+    2300056: Cama parte arriba
+    2300058: CortinaCamarote10_MeshPart0
+    2300060: CortinaCamarote10_MeshPart1
+    2300062: CortinaCamarote11_MeshPart0
+    2300064: CortinaCamarote11_MeshPart1
+    2300066: CortinaCamarote12_MeshPart0
+    2300068: CortinaCamarote12_MeshPart1
+    2300070: CortinaCamarote1_MeshPart0
+    2300072: CortinaCamarote1_MeshPart1
+    2300074: CortinaCamarote3_MeshPart0
+    2300076: CortinaCamarote3_MeshPart1
+    2300078: CortinaCamarote4_MeshPart0
+    2300080: CortinaCamarote4_MeshPart1
+    2300082: CortinaCamarote5_MeshPart0
+    2300084: CortinaCamarote5_MeshPart1
+    2300086: CortinaCamarote6_MeshPart0
+    2300088: CortinaCamarote6_MeshPart1
+    2300090: CortinaCamarote7_MeshPart0
+    2300092: CortinaCamarote7_MeshPart1
+    2300094: CortinaCamarote8_MeshPart0
+    2300096: CortinaCamarote8_MeshPart1
+    2300098: CortinaCamarote9_MeshPart0
+    2300100: CortinaCamarote9_MeshPart1
+    2300102: Divisiones pasillo
+    2300104: Mesa
+    2300106: Mesa001
+    2300108: Mueble_camarote
+    2300110: PaloCortina
+    2300112: PaloCortina001
+    2300114: PaloCortina002
+    2300116: PaloCortina003
+    2300118: PaloCortina004
+    2300120: PaloCortina005
+    2300122: Pl_cajonAbajo
+    2300124: Pl_cajonArriba
+    2300126: Pl_puerta_abajoDerecha
+    2300128: Pl_puerta_abajoIzquierda
+    2300130: Pl_puerta_arribaDerecha
+    2300132: Pl_puerta_arribaIzquierda
+    2300134: Puerta_1_Derecha
+    2300136: Puerta_1_Derecha001
+    2300138: Puerta_1_Derecha002
+    2300140: Puerta_1_Izquierda
+    2300142: Puerta_1_Izquierda001
+    2300144: Puerta_1_Izquierda002
+    2300146: Sillon camarote
+    2300148: Soporte Silla
+    2300150: Soporte Silla 1
+    2300152: Soporte Silla 2
+    2300154: Soporte Silla 3
+    2300156: Soporte Silla001
+    2300158: Soporte Silla002
+    2300160: Soporte Silla003
+    2300162: Soporte Silla004
+    2300164: Soporte Silla005
+    2300166: Soporte Silla006
+    2300168: Soporte Silla007
+    2300170: Soporte Silla008
+    2300172: Soporte Silla009
+    2300174: Soporte Silla010
+    2300176: Soporte Silla011
+    2300178: Soporte Silla012
+    2300180: vagon_MeshPart0
+    2300182: vagon_MeshPart1
+    3300000: //RootNode
+    3300002: Almohadon1
+    3300004: Almohadon2
+    3300006: ApoyaBrazos
+    3300008: ApoyaBrazos 1
+    3300010: ApoyaBrazos 2
+    3300012: ApoyaBrazos 3
+    3300014: ApoyaBrazos001
+    3300016: ApoyaBrazos002
+    3300018: ApoyaBrazos003
+    3300020: ApoyaBrazos004
+    3300022: ApoyaBrazos005
+    3300024: ApoyaBrazos006
+    3300026: ApoyaBrazos007
+    3300028: ApoyaBrazos008
+    3300030: ApoyaBrazos009
+    3300032: ApoyaBrazos010
+    3300034: ApoyaBrazos011
+    3300036: ApoyaBrazos012
+    3300038: Asiento002
+    3300040: Asiento003
+    3300042: Asiento004
+    3300044: Asiento005
+    3300046: Asiento006
+    3300048: Asiento007
+    3300050: Asiento008
+    3300052: Asiento1
+    3300054: Cama parte abajo
+    3300056: Cama parte arriba
+    3300058: CortinaCamarote10_MeshPart0
+    3300060: CortinaCamarote10_MeshPart1
+    3300062: CortinaCamarote11_MeshPart0
+    3300064: CortinaCamarote11_MeshPart1
+    3300066: CortinaCamarote12_MeshPart0
+    3300068: CortinaCamarote12_MeshPart1
+    3300070: CortinaCamarote1_MeshPart0
+    3300072: CortinaCamarote1_MeshPart1
+    3300074: CortinaCamarote3_MeshPart0
+    3300076: CortinaCamarote3_MeshPart1
+    3300078: CortinaCamarote4_MeshPart0
+    3300080: CortinaCamarote4_MeshPart1
+    3300082: CortinaCamarote5_MeshPart0
+    3300084: CortinaCamarote5_MeshPart1
+    3300086: CortinaCamarote6_MeshPart0
+    3300088: CortinaCamarote6_MeshPart1
+    3300090: CortinaCamarote7_MeshPart0
+    3300092: CortinaCamarote7_MeshPart1
+    3300094: CortinaCamarote8_MeshPart0
+    3300096: CortinaCamarote8_MeshPart1
+    3300098: CortinaCamarote9_MeshPart0
+    3300100: CortinaCamarote9_MeshPart1
+    3300102: Divisiones pasillo
+    3300104: Mesa
+    3300106: Mesa001
+    3300108: Mueble_camarote
+    3300110: PaloCortina
+    3300112: PaloCortina001
+    3300114: PaloCortina002
+    3300116: PaloCortina003
+    3300118: PaloCortina004
+    3300120: PaloCortina005
+    3300122: Pl_cajonAbajo
+    3300124: Pl_cajonArriba
+    3300126: Pl_puerta_abajoDerecha
+    3300128: Pl_puerta_abajoIzquierda
+    3300130: Pl_puerta_arribaDerecha
+    3300132: Pl_puerta_arribaIzquierda
+    3300134: Puerta_1_Derecha
+    3300136: Puerta_1_Derecha001
+    3300138: Puerta_1_Derecha002
+    3300140: Puerta_1_Izquierda
+    3300142: Puerta_1_Izquierda001
+    3300144: Puerta_1_Izquierda002
+    3300146: Sillon camarote
+    3300148: Soporte Silla
+    3300150: Soporte Silla 1
+    3300152: Soporte Silla 2
+    3300154: Soporte Silla 3
+    3300156: Soporte Silla001
+    3300158: Soporte Silla002
+    3300160: Soporte Silla003
+    3300162: Soporte Silla004
+    3300164: Soporte Silla005
+    3300166: Soporte Silla006
+    3300168: Soporte Silla007
+    3300170: Soporte Silla008
+    3300172: Soporte Silla009
+    3300174: Soporte Silla010
+    3300176: Soporte Silla011
+    3300178: Soporte Silla012
+    3300180: vagon_MeshPart0
+    3300182: vagon_MeshPart1
+    4300000: Mueble_camarote
+    4300002: vagon_MeshPart0
+    4300004: vagon_MeshPart1
+    4300006: Divisiones pasillo
+    4300008: Puerta_1_Izquierda
+    4300010: Puerta_1_Derecha
+    4300012: Puerta_1_Derecha001
+    4300014: Puerta_1_Izquierda001
+    4300016: Puerta_1_Derecha002
+    4300018: Puerta_1_Izquierda002
+    4300020: Cama parte abajo
+    4300022: Cama parte arriba
+    4300024: Pl_cajonAbajo
+    4300026: Pl_puerta_arribaIzquierda
+    4300028: Pl_puerta_abajoIzquierda
+    4300030: Pl_cajonArriba
+    4300032: Pl_puerta_abajoDerecha
+    4300034: Pl_puerta_arribaDerecha
+    4300036: Sillon camarote
+    4300038: Almohadon1
+    4300040: Almohadon2
+    4300042: Asiento1
+    4300044: ApoyaBrazos
+    4300046: ApoyaBrazos
+    4300048: Soporte Silla
+    4300050: Soporte Silla
+    4300052: Asiento002
+    4300054: Soporte Silla
+    4300056: Soporte Silla
+    4300058: ApoyaBrazos
+    4300060: ApoyaBrazos
+    4300062: ApoyaBrazos005
+    4300064: Soporte Silla005
+    4300066: ApoyaBrazos006
+    4300068: ApoyaBrazos007
+    4300070: Soporte Silla006
+    4300072: Soporte Silla007
+    4300074: Soporte Silla008
+    4300076: ApoyaBrazos008
+    4300078: Asiento005
+    4300080: Asiento006
+    4300082: ApoyaBrazos009
+    4300084: Soporte Silla009
+    4300086: ApoyaBrazos010
+    4300088: ApoyaBrazos011
+    4300090: Soporte Silla010
+    4300092: Soporte Silla011
+    4300094: Soporte Silla012
+    4300096: ApoyaBrazos012
+    4300098: Asiento007
+    4300100: Asiento008
+    4300102: Mesa
+    4300104: Mesa001
+    4300106: CortinaCamarote1_MeshPart0
+    4300108: CortinaCamarote1_MeshPart1
+    4300110: CortinaCamarote3_MeshPart0
+    4300112: CortinaCamarote3_MeshPart1
+    4300114: CortinaCamarote4_MeshPart0
+    4300116: CortinaCamarote4_MeshPart1
+    4300118: CortinaCamarote6_MeshPart0
+    4300120: CortinaCamarote6_MeshPart1
+    4300122: CortinaCamarote5_MeshPart0
+    4300124: CortinaCamarote5_MeshPart1
+    4300126: CortinaCamarote7_MeshPart0
+    4300128: CortinaCamarote7_MeshPart1
+    4300130: CortinaCamarote8_MeshPart0
+    4300132: CortinaCamarote8_MeshPart1
+    4300134: CortinaCamarote10_MeshPart0
+    4300136: CortinaCamarote10_MeshPart1
+    4300138: CortinaCamarote9_MeshPart0
+    4300140: CortinaCamarote9_MeshPart1
+    4300142: CortinaCamarote11_MeshPart0
+    4300144: CortinaCamarote11_MeshPart1
+    4300146: CortinaCamarote12_MeshPart0
+    4300148: CortinaCamarote12_MeshPart1
+    4300150: PaloCortina
+    4300152: PaloCortina001
+    4300154: PaloCortina002
+    4300156: PaloCortina003
+    4300158: PaloCortina004
+    4300160: PaloCortina005
+    4300162: Asiento003
+    4300164: ApoyaBrazos001
+    4300166: Soporte Silla003
+    4300168: ApoyaBrazos003
+    4300170: Soporte Silla002
+    4300172: Asiento004
+    4300174: ApoyaBrazos004
+    4300176: Soporte Silla001
+    4300178: Soporte Silla004
+    4300180: ApoyaBrazos002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
