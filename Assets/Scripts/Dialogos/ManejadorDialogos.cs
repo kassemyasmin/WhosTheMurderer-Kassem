@@ -63,7 +63,7 @@ public class ManejadorDialogos : ControladorCanvas
         cronometro = gameObject.GetComponent<Cronometro>();
         gAna = FindObjectOfType<Analytics>();
         var audiosMuchasGracias = new List<string>();
-        audiosMuchasGracias.Add(audioMuchasGracias);
+        //audiosMuchasGracias.Add(audioMuchasGracias);
         muchasGracias = new LineaDialogo(9999, "Muchas Gracias", "", false, new List<string>(), new List<string>(), true, null,audiosMuchasGracias, "");
     }
 
