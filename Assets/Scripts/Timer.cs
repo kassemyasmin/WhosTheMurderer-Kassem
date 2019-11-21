@@ -11,7 +11,7 @@ public class Timer:MonoBehaviour {
     [SerializeField]
     float Tiempo;
 
-    public float tiempoRestante { get; private set;}
+    private float tiempoRestante;
     bool timerStarted = false;
     Text textoTimer;
     [SerializeField]

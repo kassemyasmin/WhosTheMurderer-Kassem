@@ -1,10 +1,14 @@
-﻿using System;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ControladorAjustesEnJuego : ControladorCanvas
 {
+    bool firstFrame = true;
+
+
     public int ResX;
     public int ResY;
     public bool Fullscreen;
@@ -73,7 +77,7 @@ public class ControladorAjustesEnJuego : ControladorCanvas
         }
     }
 
-  //  public bool Activo { get; private set; }
+   public bool Activo { get; private set; }
 
 
     public override void Mostrar()

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class ControladorHipotesis : MonoBehaviour
 {
@@ -14,9 +14,6 @@ public class ControladorHipotesis : MonoBehaviour
 
     [SerializeField]
     string VideoPerder;
-
-    [SerializeField]
-    int feedbackCount;
 
        //   private CanvasGanaste finalGano;
     //   private CanvasPerdiste finalPierdo;
@@ -30,21 +27,9 @@ public class ControladorHipotesis : MonoBehaviour
     private bool comprobandoHipotesis; 
 
     private Pista arma;
-    public GameObject armaOkGo;
-    public GameObject armaMalGo;
-
     private Motivo motivo;
-    public GameObject motivoOkGo;
-    public GameObject motivoMalGo;
-
     private Sospechoso sospechosoSeleccionado;
-    public GameObject sospechosoOkGo;
-    public GameObject sospechosoMalGo;
-
     private Pista[] evidencias;
-    public GameObject[] evidenciasOkGo;
-    public GameObject[] evidenciasMalGo;
-
     private Analytics gAna;
     private ManejadorTips tips;
     private Timer timer;
@@ -141,8 +126,7 @@ public class ControladorHipotesis : MonoBehaviour
 
     public void CompletarVerificacion()
     {
-        HideFeedback();
-
+        Debug.Log("Entre 129 ControladorHipotesis");
         bool gano = false;
 
         if (arma != null && motivo != null && sospechosoSeleccionado != null &&
@@ -260,60 +244,6 @@ public class ControladorHipotesis : MonoBehaviour
                 oportunidadesText.text = "Estás equivocado, te quedan " + contador.ToString() + " oportunidades";
                 finalCasiPierdo.Mostrar();
                 controladorCamara.Reset();
-
-                if (feedbackCount >= contador)
-                {
-                    if (arma != null)
-                    {
-                        if (arma.Arma)
-                        {
-                            armaOkGo.SetActive(true);
-                        }
-                        else
-                        {
-                            armaMalGo.SetActive(true);
-                        }
-                    }
-
-                    if (sospechosoSeleccionado != null)
-                    {
-                        if (sospechosoSeleccionado.Culpable)
-                        {
-                            sospechosoOkGo.SetActive(true);
-                        }
-                        else
-                        {
-                            sospechosoMalGo.SetActive(true);
-                        }
-                    }
-
-                    if (motivo != null)
-                    {
-                        if (motivo.Verdadero)
-                        {
-                            motivoOkGo.SetActive(true);
-                        }
-                        else
-                        {
-                            motivoMalGo.SetActive(true);
-                        }
-                    }
-
-                    for (int i = 0; i < evidencias.Length; i++)
-                    {
-                        if (evidencias[i] != null)
-                        {
-                            if (evidencias[i].Verdadera)
-                            {
-                                evidenciasOkGo[i].SetActive(true);
-                            }
-                            else
-                            {
-                                evidenciasMalGo[i].SetActive(true);
-                            }
-                        }
-                    }
-                }
             }
 
             if (contador == 0)
@@ -335,27 +265,6 @@ public class ControladorHipotesis : MonoBehaviour
         }
     }
 
-    public void HideFeedback()
-    {
-        armaOkGo.SetActive(false);
-        armaMalGo.SetActive(false);
-
-        motivoOkGo.SetActive(false);
-        motivoMalGo.SetActive(false);
-
-        sospechosoOkGo.SetActive(false);
-        sospechosoMalGo.SetActive(false);
-
-        foreach (var evidenciaOkGo in evidenciasOkGo)
-        {
-            evidenciaOkGo.SetActive(false);
-        }
-
-        foreach (var evidenciaMalGo in evidenciasMalGo)
-        {
-            evidenciaMalGo.SetActive(false);
-        }
-    }
 }
 
 

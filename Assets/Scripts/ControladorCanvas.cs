@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ControladorCanvas : MonoBehaviour {
 
-    protected bool firstFrame = true;
+    bool firstFrame = true;
     ControladorCamara camara;
     ControladorConjuntoCanvas conjuntoCanvas;
     ControladorClickeable controladorClickeable;

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SaltarCinematicas : MonoBehaviour
@@ -11,7 +10,6 @@ public class SaltarCinematicas : MonoBehaviour
     private LevelManager lm;
     private MeGustoNoMeGusto mg;
     public MovieTexture movTexture;
-    public MovieTexture movTexture2;
 
     // Use this for initialization
     void Start()
@@ -19,80 +17,46 @@ public class SaltarCinematicas : MonoBehaviour
         gAna = FindObjectOfType<Analytics>();
         lm = FindObjectOfType<LevelManager>();
         mg = FindObjectOfType<MeGustoNoMeGusto>();
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible=true;
-        StartCoroutine(ShowVideos());
-    }
-
-    private IEnumerator ShowVideos()
-    {
-        bool skipped = false;
-
         GetComponent<Renderer>().material.mainTexture = movTexture;
         movTexture.Play();
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible=true;
+    }
 
-        while (movTexture.isPlaying)
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (lm.FirstLoad)
             {
-                skipped = true;
-
-                if (lm.FirstLoad)
-                {
-                    gAna.gv4.LogEvent(new EventHitBuilder()
+                gAna.gv4.LogEvent(new EventHitBuilder()
                     .SetEventCategory("NoCinematicasHastaFinal")
                     .SetEventAction(SceneManager.GetActiveScene().name));
-                    gAna.gv4.DispatchHits();
-                }
-
-                if (siguienteEscena != null && siguienteEscena != "")
-                {
-                    SceneManager.LoadScene(siguienteEscena);
-                    yield break;
-                }
-
-                movTexture.Stop();
+                gAna.gv4.DispatchHits();
             }
-
-            yield return null;
+            SaltarCinematica();
         }
 
-        if (!skipped && lm.FirstLoad)
-        {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-            .SetEventCategory("CinematicasHastaFinal")
-            .SetEventAction(SceneManager.GetActiveScene().name));
-            gAna.gv4.DispatchHits();
+    }
+
+    void SaltarCinematica()
+    {
+        if (siguienteEscena != null && siguienteEscena != "")
+        { 
+            SceneManager.LoadScene(siguienteEscena);
         }
 
-        foreach (var audioSource in gameObject.GetComponents<AudioSource>())
+        else
         {
-            audioSource.Stop();
-        }
-
-        var audioSource2 = gameObject.AddComponent<AudioSource>();
-        audioSource2.clip = movTexture2.audioClip;
-        audioSource2.Play();
-        GetComponent<Renderer>().material.mainTexture = movTexture2;
-        movTexture2.Play();
-
-        while (movTexture2.isPlaying)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            mg.Mostrar();
+            movTexture.Stop();
+            foreach (var audioSource in gameObject.GetComponents<AudioSource>())
             {
-                if (siguienteEscena != null && siguienteEscena != "")
-                {
-                    SceneManager.LoadScene(siguienteEscena);
-                    yield break;
-                }
-
-                movTexture2.Stop();
+                audioSource.Stop();
             }
-
-            yield return null;
+            DestroyObject(gameObject);
         }
-
-        mg.Mostrar();
-        DestroyObject(gameObject);
     }
 }

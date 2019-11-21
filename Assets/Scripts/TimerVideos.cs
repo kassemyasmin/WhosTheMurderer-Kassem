@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class TimerVideos : MonoBehaviour
@@ -13,6 +14,7 @@ public class TimerVideos : MonoBehaviour
     bool timerStarted = false;
     private Analytics gAna;
     private LevelManager lm;
+    private MeGustoNoMeGusto mg;
 
     // Use this for initialization
     void Start()
@@ -20,6 +22,7 @@ public class TimerVideos : MonoBehaviour
         StartTimer();
         gAna = FindObjectOfType<Analytics>();
         lm = FindObjectOfType<LevelManager>();
+        mg = FindObjectOfType<MeGustoNoMeGusto>();
     }
 
     public void StartTimer()
@@ -52,11 +55,23 @@ public class TimerVideos : MonoBehaviour
                         .SetEventAction("EscuchoHastaFinal"));
                         gAna.gv4.DispatchHits();
                     }
+                    else
+                    {
+                        gAna.gv4.LogEvent(new EventHitBuilder()
+                        .SetEventCategory("CinematicasHastaFinal")
+                        .SetEventAction(SceneManager.GetActiveScene().name));
+                        gAna.gv4.DispatchHits();
+                    }
                 }
 
 
                 if (siguienteEscena != null && siguienteEscena != "")
                     SceneManager.LoadScene(siguienteEscena);
+
+
+                else
+                mg.Mostrar();
+
 
                 StopTimer();
             }

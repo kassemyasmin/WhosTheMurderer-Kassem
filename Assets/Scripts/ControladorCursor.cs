@@ -6,11 +6,8 @@ public class ControladorCursor : MonoBehaviour {
 
     [SerializeField]
     Texture cross;
-    [SerializeField]
-    Texture hand;
 
     MouseLook[] mouseLook;
-    Rect rect;
 
     bool Active;
     bool Last;
@@ -21,9 +18,6 @@ public class ControladorCursor : MonoBehaviour {
         Last = false;
 
         mouseLook = GetComponentsInChildren<MouseLook>();
-
-        var size = Screen.width / 32;
-        rect = new Rect((Screen.width - size) / 2 +size/3, (Screen.height - size) / 2 + size/3, size, size);
     }
 	
     
@@ -46,15 +40,10 @@ public class ControladorCursor : MonoBehaviour {
     {
         if (Active)
         {
-            GUI.DrawTexture(rect, UseHand() ? hand : cross);
-        }
-    }
+            var size = Screen.width / 32;
 
-    private bool UseHand()
-    {
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(new Vector3(rect.center.x, rect.center.y));
-        return Physics.Raycast(ray, out hit) && hit.collider != null && hit.collider.GetComponent<Pista>() != null;
+            GUI.DrawTexture(new Rect((Screen.width - size) / 2 +size/3, (Screen.height - size) / 2 + size/3, size, size), cross);
+        }
     }
 
     public void Togle()
@@ -74,7 +63,6 @@ public class ControladorCursor : MonoBehaviour {
 
     public void Enable()
     {
-        Debug.LogError("--> Enable");
         Active = true;
 //        Cursor.lockState = CursorLockMode.Locked;
 //        Cursor.visible = false;
@@ -83,7 +71,6 @@ public class ControladorCursor : MonoBehaviour {
 
     public void Disable()
     {
-        Debug.LogError("--> Disable");
         Active = false;
 //        Cursor.lockState = CursorLockMode.Confined;
 //        Cursor.visible = true;
@@ -92,14 +79,12 @@ public class ControladorCursor : MonoBehaviour {
 
     private void EnableMouseLook()
     {
-        Debug.LogError("--> Locked");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     private void DisableMouseLook()
     {
-        Debug.LogError("--> Confined");
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
