@@ -31,7 +31,6 @@ public class ControladorHipotesis : MonoBehaviour
     private Sospechoso sospechosoSeleccionado;
     private Pista[] evidencias;
     private Analytics gAna;
-    private ManejadorTips tips;
     private Timer timer;
     ControladorCamara controladorCamara;
 
@@ -55,7 +54,6 @@ public class ControladorHipotesis : MonoBehaviour
         comprobandoTeoria = FindObjectOfType<CanvasComprobandoTeoria>();
         persister = FindObjectOfType<Persister>();
         gAna = FindObjectOfType<Analytics>();
-        tips = FindObjectOfType<ManejadorTips>();
         timer = FindObjectOfType<Timer>();
         controladorCamara = FindObjectOfType<ControladorCamara>();
     }
@@ -203,11 +201,7 @@ public class ControladorHipotesis : MonoBehaviour
                     .SetEventCategory("GanarOportunidades")
                     .SetEventAction(SceneManager.GetActiveScene().name)
                     .SetEventLabel(Convert.ToString(contador)));
-
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("Tips")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel(Convert.ToString(tips.ContadorTips)));
+          
 
             gAna.gv4.LogEvent(new EventHitBuilder()
                    .SetEventCategory("Zoom")
