@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Video;
 
 public class CanvasReproductor : ControladorCanvasTemporizado {
 
     [SerializeField]
-    MovieTexture movie;
+    VideoPlayer movie;
 
     [SerializeField]
     public bool loop = true;
@@ -22,8 +23,8 @@ public class CanvasReproductor : ControladorCanvasTemporizado {
 
     void OnGUI()
     {
-        movie.loop = loop;
-        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), movie);
+        movie.isLooping = loop;
+        //GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), movie);
     }
 
 }

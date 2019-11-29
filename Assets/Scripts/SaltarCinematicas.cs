@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class SaltarCinematicas : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class SaltarCinematicas : MonoBehaviour
     private Analytics gAna;
     private LevelManager lm;
     private MeGustoNoMeGusto mg;
-    public MovieTexture movTexture;
+    private VideoPlayer movTexture;
 
     // Use this for initialization
     void Start()
@@ -17,8 +18,8 @@ public class SaltarCinematicas : MonoBehaviour
         gAna = FindObjectOfType<Analytics>();
         lm = FindObjectOfType<LevelManager>();
         mg = FindObjectOfType<MeGustoNoMeGusto>();
-        GetComponent<Renderer>().material.mainTexture = movTexture;
-        movTexture.Play();
+        //GetComponent<Renderer>().material.mainTexture = movTexture;
+        movTexture = GetComponent<VideoPlayer>();
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible=true;
     }
