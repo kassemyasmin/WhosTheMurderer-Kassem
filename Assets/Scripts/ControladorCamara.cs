@@ -28,7 +28,7 @@ public class ControladorCamara : MonoBehaviour
         cursor = FindObjectOfType<ControladorCursor>();
 
 
-        var aux = fpc.transform.Find("FirstPersonCharacter");
+        var aux = fpc.transform.Find("Main Camera");
             
             
         camara=aux.GetComponent<Camera>();
@@ -40,10 +40,6 @@ public class ControladorCamara : MonoBehaviour
         Reset();
    }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     public void LockCamera()
     {

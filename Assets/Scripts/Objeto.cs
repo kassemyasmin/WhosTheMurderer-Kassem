@@ -18,7 +18,7 @@ public class Objeto : AssetClickeable
         controladorTutorial = FindObjectOfType<ControladorTutorial>();
     }
 
-    void OnMouseDown()
+    protected override void OnMouseDown()
     {
         var pistas = this.GetComponents<Pista>();
 

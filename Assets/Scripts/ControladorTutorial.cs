@@ -122,6 +122,11 @@ public class ControladorTutorial : MonoBehaviour {
         ProcesarEventoTutorial("Principal");
     }
 
+    public void CursorCambia()
+    {
+        ProcesarEventoTutorial("CurosrCambia");
+    }
+
     public virtual void Ocultar()
     {
         this.gameObject.SetActive(false);

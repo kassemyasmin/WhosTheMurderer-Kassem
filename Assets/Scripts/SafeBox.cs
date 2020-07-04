@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SafeBox : MonoBehaviour {
+public class SafeBox : AssetClickeable {
 
     bool opened = false;
 
@@ -16,13 +16,6 @@ public class SafeBox : MonoBehaviour {
 	
 	}
 
-
-    void OnMouseDown()
-    {
-        if (!opened)
-            safeBoxCanvas.Mostrar();
-    }
- 
     public void Open()
     {
         if (!opened)
@@ -32,4 +25,9 @@ public class SafeBox : MonoBehaviour {
         }
     }
 
+    protected override void OnMouseDown()
+    {
+        if (!opened)
+            safeBoxCanvas.Mostrar();
+    }
 }

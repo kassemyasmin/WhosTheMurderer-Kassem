@@ -17,7 +17,7 @@ public class Personaje : AssetClickeable{
     [SerializeField]
     private string nombre;
 
-    void OnMouseDown()
+    protected override void OnMouseDown()
     {
         controladorTutorial.Dialogo();
         manejadorDialogos.MostrarDialogo(nombre);

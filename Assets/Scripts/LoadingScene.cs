@@ -1,23 +1,32 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class LoadingScene : MonoBehaviour {
 
     [SerializeField]
     string siguienteEscena;
-
-    private AsyncOperation loading;
-
+	
     // Use this for initialization
-    void Start () {
-        loading=SceneManager.LoadSceneAsync(siguienteEscena,LoadSceneMode.Single);
+    void Start ()
+    {
+        StartCoroutine(LoadScene(siguienteEscena));
     }
 
-    // Update is called once per frame
-    void Update ()
+    private IEnumerator LoadScene(string _scene)
     {
-        if (loading.isDone)
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(siguienteEscena));
+        //SceneManager.sceneLoaded += OnSceneLoaded;
+        var async = SceneManager.LoadSceneAsync(siguienteEscena, LoadSceneMode.Single);
+        async.allowSceneActivation = true;
+        while (!async.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    private void OnSceneLoaded(Scene _scene,LoadSceneMode _mode)
+    {
+        SceneManager.SetActiveScene(_scene);
     }
 }

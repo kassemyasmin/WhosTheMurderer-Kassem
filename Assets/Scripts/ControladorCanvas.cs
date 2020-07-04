@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class ControladorCanvas : MonoBehaviour {
 
-    bool firstFrame = true;
+    protected bool firstFrame = true;
     ControladorCamara camara;
     ControladorConjuntoCanvas conjuntoCanvas;
     ControladorClickeable controladorClickeable;
     protected Analytics gAna;
+
+    private ControladorCursor controladorCursor;
 
     // Use this for initialization
     void Start()
@@ -15,6 +17,7 @@ public class ControladorCanvas : MonoBehaviour {
         camara = FindObjectOfType<ControladorCamara>();
         conjuntoCanvas = FindObjectOfType<ControladorConjuntoCanvas>();
         controladorClickeable = FindObjectOfType<ControladorClickeable>();
+        controladorCursor = FindObjectOfType<ControladorCursor>();
         CanvasStart();
         Activo = true;
         gAna = FindObjectOfType<Analytics>();
@@ -49,10 +52,20 @@ public class ControladorCanvas : MonoBehaviour {
         if (!Activo)
         {
             this.gameObject.SetActive(true);
+            if (camara == null)
+                camara = FindObjectOfType<ControladorCamara>();
             camara.LockCamera();
             Activo = true;
+            if (conjuntoCanvas == null)
+                conjuntoCanvas = FindObjectOfType<ControladorConjuntoCanvas>();
             conjuntoCanvas.PushCanvas(this);
+            if (controladorClickeable == null)
+                controladorClickeable = FindObjectOfType<ControladorClickeable>();
             controladorClickeable.DisableAll();
+            if (controladorCursor == null)
+                controladorCursor = FindObjectOfType<ControladorCursor>();
+            controladorCursor.canvasActivo = true;
+            DisableMouseLook();
         }
     }
 
@@ -64,8 +77,29 @@ public class ControladorCanvas : MonoBehaviour {
             camara.UnlockCamera();
             Activo = false;
             if (!firstFrame)
+            {
+                if (conjuntoCanvas == null)
+                    conjuntoCanvas = FindObjectOfType<ControladorConjuntoCanvas>();
                 conjuntoCanvas.PopCanvas();
+            }
+            if (controladorClickeable == null)
+                controladorClickeable = FindObjectOfType<ControladorClickeable>();
             controladorClickeable.EnableAll();
+            controladorCursor.canvasActivo = false;
+            EnableMouseLook();
         }
     }
+
+    private void EnableMouseLook()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void DisableMouseLook()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
 }

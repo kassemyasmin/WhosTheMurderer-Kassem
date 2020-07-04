@@ -3,8 +3,8 @@
 public  class ControladorCanvasTemporizado : ControladorCanvas
     {
 
-    [SerializeField]
-    float LapsoDeTiempo;
+    
+    public float LapsoDeTiempo;
 
     float tiempoRestante;
 

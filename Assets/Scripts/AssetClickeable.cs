@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class AssetClickeable : MonoBehaviour {
+public abstract class AssetClickeable : MonoBehaviour {
 
     ControladorClickeable controladorObjetosClickeables;
 
@@ -29,6 +29,12 @@ public class AssetClickeable : MonoBehaviour {
     void Update () {
         AssetUpdate();
 	}
+
+    protected abstract void OnMouseDown();
+    public void Clicked()
+    {
+        OnMouseDown();
+    }
 
     public void Enable()
     {

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class ControladorTeclado : MonoBehaviour {
+public class ControladorTeclado : MonoBehaviour
+{
 
     Inventario inventario;
     Pausa pausa;
@@ -9,8 +10,9 @@ public class ControladorTeclado : MonoBehaviour {
     ControladorTutorial controladorTutorial;
     Analytics gAna;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
         inventario = FindObjectOfType<Inventario>();
         pausa = FindObjectOfType<Pausa>();
@@ -18,22 +20,26 @@ public class ControladorTeclado : MonoBehaviour {
         camara = FindObjectOfType<ControladorCamara>();
         controladorTutorial = FindObjectOfType<ControladorTutorial>();
         gAna = FindObjectOfType<Analytics>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
             controladorTutorial.Movimiento();
 
-            if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             controladorTutorial.AbrirInventario();
             inventario.Togle();
             gAna.gv4.LogScreen(new AppViewHitBuilder()
                 .SetScreenName("Inventario"));
             gAna.gv4.DispatchHits();
         }
-       if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!conjuntoCanvas.Escape())
             {

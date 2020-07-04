@@ -28,8 +28,8 @@ public class ControladorAjustes1 : MonoBehaviour
         {
             opcionesResolucion.Add(new Dropdown.OptionData(res.width.ToString() + "x" + res.height.ToString()));
         }
-        resoluciones.options.Clear();
-        resoluciones.AddOptions(opcionesResolucion);
+        //resoluciones.options.Clear();
+        //resoluciones.AddOptions(opcionesResolucion);
     }
 
     // Update is called once per frame

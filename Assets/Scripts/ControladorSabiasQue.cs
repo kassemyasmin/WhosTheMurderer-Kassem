@@ -7,7 +7,7 @@ public class ControladorSabiasQue : MonoBehaviour {
     float TiempoEspera;
 
     private float tiempoRestante;
-    private Text tip;
+    public Text tip;
 
     private LineaSabiasQue[] lineas;
 
@@ -16,23 +16,26 @@ public class ControladorSabiasQue : MonoBehaviour {
         tiempoRestante = TiempoEspera;
 
         lineas = GetComponentsInChildren<LineaSabiasQue>();
-        foreach(var t in GetComponentsInChildren<Text>())
+        /*foreach(var t in GetComponentsInChildren<Text>())
         {
             if (t.name =="Tip")
                 tip = t;
-        }
-        Next();
+        }*/
+        if (lineas.GetLength(0) > 0)
+            Next();
 	}
 
     // Update is called once per frame
     void Update()
     {
-
-        tiempoRestante -= Time.deltaTime;
-        if (tiempoRestante <= 0)
+        if (lineas.GetLength(0) > 0)
         {
-            Next();
-            tiempoRestante = TiempoEspera;
+            tiempoRestante -= Time.deltaTime;
+            if (tiempoRestante <= 0)
+            {
+                Next();
+                tiempoRestante = TiempoEspera;
+            }
         }
     }
 

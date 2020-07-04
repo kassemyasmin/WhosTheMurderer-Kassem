@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
             reiniciar = false;
             
         SceneManager.LoadScene(name);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(name));
+       // SceneManager.SetActiveScene(SceneManager.GetSceneByName(name));
         if (name == "Creditos")
         {
             gAna.gv4.LogScreen(new AppViewHitBuilder()
