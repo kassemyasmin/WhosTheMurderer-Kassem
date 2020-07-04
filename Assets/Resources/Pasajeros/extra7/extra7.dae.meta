@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 8b0a7cc277b046949b6d506d237cdd07
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_r
+    100004: calf_l
+    100006: calf_r
+    100008: clavicle_l
+    100010: clavicle_r
+    100012: extra7
+    100014: //RootNode
+    100016: extra7-braid01
+    100018: extra7-crop_top
+    100020: extra7-eyebrow004
+    100022: extra7-eyelashes03
+    100024: extra7-female_generic
+    100026: extra7-highpolyeyes
+    100028: extra7-mini_skirt_02
+    100030: extra7-nosepierce
+    100032: extra7-teeth_base
+    100034: extra7-tongue01
+    100036: extra7-universal_heel
+    100038: foot_l
+    100040: foot_r
+    100042: hand_l
+    100044: hand_r
+    100046: head
+    100048: index_01_l
+    100050: index_01_r
+    100052: index_02_l
+    100054: index_02_r
+    100056: index_03_l
+    100058: index_03_r
+    100060: lowerarm_l
+    100062: lowerarm_r
+    100064: middle_01_l
+    100066: middle_01_r
+    100068: middle_02_l
+    100070: middle_02_r
+    100072: middle_03_l
+    100074: middle_03_r
+    100076: neck_01
+    100078: pelvis
+    100080: pinky_01_l
+    100082: pinky_01_r
+    100084: pinky_02_l
+    100086: pinky_02_r
+    100088: pinky_03_l
+    100090: pinky_03_r
+    100092: ring_01_l
+    100094: ring_01_r
+    100096: ring_02_l
+    100098: ring_02_r
+    100100: ring_03_l
+    100102: ring_03_r
+    100104: Root
+    100106: spine_01
+    100108: spine_02
+    100110: spine_03
+    100112: thigh_l
+    100114: thigh_r
+    100116: thumb_01_l
+    100118: thumb_01_r
+    100120: thumb_02_l
+    100122: thumb_02_r
+    100124: thumb_03_l
+    100126: thumb_03_r
+    100128: upperarm_l
+    100130: upperarm_r
+    100132: extra7-female_fingernails
+    100134: extra7-female_generic_MeshPart0
+    100136: extra7-female_generic_MeshPart1
+    100138: extra7-peeptoe_boot
+    400000: ball_l
+    400002: ball_r
+    400004: calf_l
+    400006: calf_r
+    400008: clavicle_l
+    400010: clavicle_r
+    400012: //RootNode
+    400014: extra7
+    400016: extra7-braid01
+    400018: extra7-crop_top
+    400020: extra7-eyebrow004
+    400022: extra7-eyelashes03
+    400024: extra7-female_generic
+    400026: extra7-highpolyeyes
+    400028: extra7-mini_skirt_02
+    400030: extra7-nosepierce
+    400032: extra7-teeth_base
+    400034: extra7-tongue01
+    400036: extra7-universal_heel
+    400038: foot_l
+    400040: foot_r
+    400042: hand_l
+    400044: hand_r
+    400046: head
+    400048: index_01_l
+    400050: index_01_r
+    400052: index_02_l
+    400054: index_02_r
+    400056: index_03_l
+    400058: index_03_r
+    400060: lowerarm_l
+    400062: lowerarm_r
+    400064: middle_01_l
+    400066: middle_01_r
+    400068: middle_02_l
+    400070: middle_02_r
+    400072: middle_03_l
+    400074: middle_03_r
+    400076: neck_01
+    400078: pelvis
+    400080: pinky_01_l
+    400082: pinky_01_r
+    400084: pinky_02_l
+    400086: pinky_02_r
+    400088: pinky_03_l
+    400090: pinky_03_r
+    400092: ring_01_l
+    400094: ring_01_r
+    400096: ring_02_l
+    400098: ring_02_r
+    400100: ring_03_l
+    400102: ring_03_r
+    400104: Root
+    400106: spine_01
+    400108: spine_02
+    400110: spine_03
+    400112: thigh_l
+    400114: thigh_r
+    400116: thumb_01_l
+    400118: thumb_01_r
+    400120: thumb_02_l
+    400122: thumb_02_r
+    400124: thumb_03_l
+    400126: thumb_03_r
+    400128: upperarm_l
+    400130: upperarm_r
+    400132: extra7-female_fingernails
+    400134: extra7-female_generic_MeshPart0
+    400136: extra7-female_generic_MeshPart1
+    400138: extra7-peeptoe_boot
+    4300000: extra7-female_generic
+    4300002: extra7-braid01
+    4300004: extra7-highpolyeyes
+    4300006: extra7-eyebrow004
+    4300008: extra7-eyelashes03
+    4300010: extra7-teeth_base
+    4300012: extra7-tongue01
+    4300014: extra7-universal_heel
+    4300016: extra7-nosepierce
+    4300018: extra7-crop_top
+    4300020: extra7-mini_skirt_02
+    4300022: extra7-female_generic_MeshPart0
+    4300024: extra7-female_generic_MeshPart1
+    4300026: extra7-female_fingernails
+    4300028: extra7-peeptoe_boot
+    9500000: //RootNode
+    13700000: extra7-braid01
+    13700002: extra7-crop_top
+    13700004: extra7-eyebrow004
+    13700006: extra7-eyelashes03
+    13700008: extra7-female_generic
+    13700010: extra7-highpolyeyes
+    13700012: extra7-mini_skirt_02
+    13700014: extra7-nosepierce
+    13700016: extra7-teeth_base
+    13700018: extra7-tongue01
+    13700020: extra7-universal_heel
+    13700022: extra7-female_fingernails
+    13700024: extra7-female_generic_MeshPart0
+    13700026: extra7-female_generic_MeshPart1
+    13700028: extra7-peeptoe_boot
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_ice
+    second: {fileID: 2100000, guid: f7681df31a935474ba5ed912985b956e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_cottonMaterial
+    second: {fileID: 2100000, guid: e64775b7414fdff449c43ca09e5dd946, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bodyMaterial
+    second: {fileID: 2100000, guid: e80b12474345d9a40a60587c5c9c2688, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: braid01
+    second: {fileID: 2100000, guid: 59be59be8abd75b4884307d6e3a08fe2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyebrow004
+    second: {fileID: 2100000, guid: 77442e6fa09fe6e49a464eb6b032b04b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_fingernailsMaterial
+    second: {fileID: 2100000, guid: 593b76b95ac28c14db334633e0ee61b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material.001Material
+    second: {fileID: 2100000, guid: 53dcb0ce81f3dcc4d9a26ff587c19035, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: materialMaterial
+    second: {fileID: 2100000, guid: 3f00fa20643671047aec88d98b89f083, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: teethMaterial
+    second: {fileID: 2100000, guid: 567adc8c6a934aa418bfd7867e26e279, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tongue01Material
+    second: {fileID: 2100000, guid: 1c89699f50380ce45ad9da01b6f9280e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: young_asian_female
+    second: {fileID: 2100000, guid: 0f0ef33463a055e4a8d742b43608df2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zipperMaterial
+    second: {fileID: 2100000, guid: cad28cd0781999e458d1e8dba60d3ae2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

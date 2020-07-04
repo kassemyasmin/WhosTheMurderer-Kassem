@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: c16b08e9108b5774bb770dd3fe119da7
+timeCreated: 1475360039
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_r
+    100004: calf_l
+    100006: calf_r
+    100008: clavicle_l
+    100010: clavicle_r
+    100012: foot_l
+    100014: foot_r
+    100016: hand_l
+    100018: hand_r
+    100020: head
+    100022: index_01_l
+    100024: index_01_r
+    100026: index_02_l
+    100028: index_02_r
+    100030: index_03_l
+    100032: index_03_r
+    100034: jackpeck
+    100036: //RootNode
+    100038: jackpeck-base.obj
+    100040: jackpeck-eyebrow008
+    100042: jackpeck-highpolyeyes
+    100044: jackpeck-male_casualsuit05
+    100046: jackpeck-shoes02
+    100048: jackpeck-short02
+    100050: jackpeck-teeth_base
+    100052: jackpeck-tongue01
+    100054: lowerarm_l
+    100056: lowerarm_r
+    100058: middle_01_l
+    100060: middle_01_r
+    100062: middle_02_l
+    100064: middle_02_r
+    100066: middle_03_l
+    100068: middle_03_r
+    100070: neck_01
+    100072: pelvis
+    100074: pinky_01_l
+    100076: pinky_01_r
+    100078: pinky_02_l
+    100080: pinky_02_r
+    100082: pinky_03_l
+    100084: pinky_03_r
+    100086: ring_01_l
+    100088: ring_01_r
+    100090: ring_02_l
+    100092: ring_02_r
+    100094: ring_03_l
+    100096: ring_03_r
+    100098: Root
+    100100: spine_01
+    100102: spine_02
+    100104: spine_03
+    100106: thigh_l
+    100108: thigh_r
+    100110: thumb_01_l
+    100112: thumb_01_r
+    100114: thumb_02_l
+    100116: thumb_02_r
+    100118: thumb_03_l
+    100120: thumb_03_r
+    100122: upperarm_l
+    100124: upperarm_r
+    400000: ball_l
+    400002: ball_r
+    400004: calf_l
+    400006: calf_r
+    400008: clavicle_l
+    400010: clavicle_r
+    400012: foot_l
+    400014: foot_r
+    400016: hand_l
+    400018: hand_r
+    400020: head
+    400022: index_01_l
+    400024: index_01_r
+    400026: index_02_l
+    400028: index_02_r
+    400030: index_03_l
+    400032: index_03_r
+    400034: jackpeck
+    400036: //RootNode
+    400038: jackpeck-base.obj
+    400040: jackpeck-eyebrow008
+    400042: jackpeck-highpolyeyes
+    400044: jackpeck-male_casualsuit05
+    400046: jackpeck-shoes02
+    400048: jackpeck-short02
+    400050: jackpeck-teeth_base
+    400052: jackpeck-tongue01
+    400054: lowerarm_l
+    400056: lowerarm_r
+    400058: middle_01_l
+    400060: middle_01_r
+    400062: middle_02_l
+    400064: middle_02_r
+    400066: middle_03_l
+    400068: middle_03_r
+    400070: neck_01
+    400072: pelvis
+    400074: pinky_01_l
+    400076: pinky_01_r
+    400078: pinky_02_l
+    400080: pinky_02_r
+    400082: pinky_03_l
+    400084: pinky_03_r
+    400086: ring_01_l
+    400088: ring_01_r
+    400090: ring_02_l
+    400092: ring_02_r
+    400094: ring_03_l
+    400096: ring_03_r
+    400098: Root
+    400100: spine_01
+    400102: spine_02
+    400104: spine_03
+    400106: thigh_l
+    400108: thigh_r
+    400110: thumb_01_l
+    400112: thumb_01_r
+    400114: thumb_02_l
+    400116: thumb_02_r
+    400118: thumb_03_l
+    400120: thumb_03_r
+    400122: upperarm_l
+    400124: upperarm_r
+    4300000: jackpeck-base.obj
+    4300002: jackpeck-short02
+    4300004: jackpeck-highpolyeyes
+    4300006: jackpeck-eyebrow008
+    4300008: jackpeck-teeth_base
+    4300010: jackpeck-tongue01
+    4300012: jackpeck-shoes02
+    4300014: jackpeck-male_casualsuit05
+    9500000: //RootNode
+    13700000: jackpeck-base.obj
+    13700002: jackpeck-eyebrow008
+    13700004: jackpeck-highpolyeyes
+    13700006: jackpeck-male_casualsuit05
+    13700008: jackpeck-shoes02
+    13700010: jackpeck-short02
+    13700012: jackpeck-teeth_base
+    13700014: jackpeck-tongue01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

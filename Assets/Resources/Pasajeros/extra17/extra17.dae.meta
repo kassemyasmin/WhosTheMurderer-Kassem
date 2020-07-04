@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: 4f37368265739954da7d984045da2110
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_r
+    100004: calf_l
+    100006: calf_r
+    100008: clavicle_l
+    100010: clavicle_r
+    100012: extra17
+    100014: //RootNode
+    100016: extra17-base.obj
+    100018: extra17-base.obj_MeshPart0
+    100020: extra17-base.obj_MeshPart1
+    100022: extra17-eyebrow012
+    100024: extra17-full_beard
+    100026: extra17-harvey_pantsbootsv1
+    100028: extra17-highpolyeyes
+    100030: extra17-short04
+    100032: extra17-superman_shirt
+    100034: extra17-teeth_base
+    100036: extra17-tongue01
+    100038: foot_l
+    100040: foot_r
+    100042: hand_l
+    100044: hand_r
+    100046: head
+    100048: index_01_l
+    100050: index_01_r
+    100052: index_02_l
+    100054: index_02_r
+    100056: index_03_l
+    100058: index_03_r
+    100060: lowerarm_l
+    100062: lowerarm_r
+    100064: middle_01_l
+    100066: middle_01_r
+    100068: middle_02_l
+    100070: middle_02_r
+    100072: middle_03_l
+    100074: middle_03_r
+    100076: neck_01
+    100078: pelvis
+    100080: pinky_01_l
+    100082: pinky_01_r
+    100084: pinky_02_l
+    100086: pinky_02_r
+    100088: pinky_03_l
+    100090: pinky_03_r
+    100092: ring_01_l
+    100094: ring_01_r
+    100096: ring_02_l
+    100098: ring_02_r
+    100100: ring_03_l
+    100102: ring_03_r
+    100104: Root
+    100106: spine_01
+    100108: spine_02
+    100110: spine_03
+    100112: thigh_l
+    100114: thigh_r
+    100116: thumb_01_l
+    100118: thumb_01_r
+    100120: thumb_02_l
+    100122: thumb_02_r
+    100124: thumb_03_l
+    100126: thumb_03_r
+    100128: upperarm_l
+    100130: upperarm_r
+    400000: ball_l
+    400002: ball_r
+    400004: calf_l
+    400006: calf_r
+    400008: clavicle_l
+    400010: clavicle_r
+    400012: //RootNode
+    400014: extra17
+    400016: extra17-base.obj
+    400018: extra17-base.obj_MeshPart0
+    400020: extra17-base.obj_MeshPart1
+    400022: extra17-eyebrow012
+    400024: extra17-full_beard
+    400026: extra17-harvey_pantsbootsv1
+    400028: extra17-highpolyeyes
+    400030: extra17-short04
+    400032: extra17-superman_shirt
+    400034: extra17-teeth_base
+    400036: extra17-tongue01
+    400038: foot_l
+    400040: foot_r
+    400042: hand_l
+    400044: hand_r
+    400046: head
+    400048: index_01_l
+    400050: index_01_r
+    400052: index_02_l
+    400054: index_02_r
+    400056: index_03_l
+    400058: index_03_r
+    400060: lowerarm_l
+    400062: lowerarm_r
+    400064: middle_01_l
+    400066: middle_01_r
+    400068: middle_02_l
+    400070: middle_02_r
+    400072: middle_03_l
+    400074: middle_03_r
+    400076: neck_01
+    400078: pelvis
+    400080: pinky_01_l
+    400082: pinky_01_r
+    400084: pinky_02_l
+    400086: pinky_02_r
+    400088: pinky_03_l
+    400090: pinky_03_r
+    400092: ring_01_l
+    400094: ring_01_r
+    400096: ring_02_l
+    400098: ring_02_r
+    400100: ring_03_l
+    400102: ring_03_r
+    400104: Root
+    400106: spine_01
+    400108: spine_02
+    400110: spine_03
+    400112: thigh_l
+    400114: thigh_r
+    400116: thumb_01_l
+    400118: thumb_01_r
+    400120: thumb_02_l
+    400122: thumb_02_r
+    400124: thumb_03_l
+    400126: thumb_03_r
+    400128: upperarm_l
+    400130: upperarm_r
+    4300000: extra17-base.obj_MeshPart0
+    4300002: extra17-base.obj_MeshPart1
+    4300004: extra17-short04
+    4300006: extra17-highpolyeyes
+    4300008: extra17-eyebrow012
+    4300010: extra17-teeth_base
+    4300012: extra17-tongue01
+    4300014: extra17-full_beard
+    4300016: extra17-superman_shirt
+    4300018: extra17-harvey_pantsbootsv1
+    9500000: //RootNode
+    13700000: extra17-base.obj_MeshPart0
+    13700002: extra17-base.obj_MeshPart1
+    13700004: extra17-eyebrow012
+    13700006: extra17-full_beard
+    13700008: extra17-harvey_pantsbootsv1
+    13700010: extra17-highpolyeyes
+    13700012: extra17-short04
+    13700014: extra17-superman_shirt
+    13700016: extra17-teeth_base
+    13700018: extra17-tongue01
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_brown
+    second: {fileID: 2100000, guid: 020d760fc5013d448909aa98459cb54a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyebrow012
+    second: {fileID: 2100000, guid: 26b4d12fa684cba44bf0693b3c6dc9a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: full_beardMaterial
+    second: {fileID: 2100000, guid: ab7ed83dfb07b104782d93122d5399b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material.001Material
+    second: {fileID: 2100000, guid: 79a7449d7e06de945ad5abb122268bb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material.002Material
+    second: {fileID: 2100000, guid: 2881c25148e032f4caf1416b74b4ac6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: middleage_asian_male
+    second: {fileID: 2100000, guid: bb673aeac6705ce4b8984b65090b0fbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: short04
+    second: {fileID: 2100000, guid: fe5afe687f714c548a24c4423ad81e58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: teethMaterial
+    second: {fileID: 2100000, guid: a4eef91b9652aed47babab4050831d7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tongue01Material
+    second: {fileID: 2100000, guid: 369c4dfd6ee6cc24b8f2879cd7a757a8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

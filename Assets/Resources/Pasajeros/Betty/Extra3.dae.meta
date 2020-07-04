@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 547e5d57f54ea0e4ea706ff6faecd63f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: extra3-base.obj
+    100004: extra3-base.obj_MeshPart0
+    100006: extra3-base.obj_MeshPart1
+    100008: extra3-eyebrow004
+    100010: extra3-eyelashes04
+    100012: extra3-highpolyeyes
+    100014: extra3-leatherboots_2cm
+    100016: extra3-leatherboots_2cm_MeshPart0
+    100018: extra3-leatherboots_2cm_MeshPart1
+    100020: extra3-leatherboots_2cm_MeshPart2
+    100022: extra3-leatherboots_2cm_MeshPart3
+    100024: extra3-long01
+    100026: extra3-mini_skirt_02
+    100028: extra3-nosepierce
+    100030: extra3-rolled_neck_blouse
+    100032: extra3-teeth_base
+    100034: extra3-tongue01
+    400000: //RootNode
+    400002: extra3-base.obj
+    400004: extra3-base.obj_MeshPart0
+    400006: extra3-base.obj_MeshPart1
+    400008: extra3-eyebrow004
+    400010: extra3-eyelashes04
+    400012: extra3-highpolyeyes
+    400014: extra3-leatherboots_2cm
+    400016: extra3-leatherboots_2cm_MeshPart0
+    400018: extra3-leatherboots_2cm_MeshPart1
+    400020: extra3-leatherboots_2cm_MeshPart2
+    400022: extra3-leatherboots_2cm_MeshPart3
+    400024: extra3-long01
+    400026: extra3-mini_skirt_02
+    400028: extra3-nosepierce
+    400030: extra3-rolled_neck_blouse
+    400032: extra3-teeth_base
+    400034: extra3-tongue01
+    2300000: extra3-base.obj_MeshPart0
+    2300002: extra3-base.obj_MeshPart1
+    2300004: extra3-eyebrow004
+    2300006: extra3-eyelashes04
+    2300008: extra3-highpolyeyes
+    2300010: extra3-leatherboots_2cm_MeshPart0
+    2300012: extra3-leatherboots_2cm_MeshPart1
+    2300014: extra3-leatherboots_2cm_MeshPart2
+    2300016: extra3-leatherboots_2cm_MeshPart3
+    2300018: extra3-long01
+    2300020: extra3-mini_skirt_02
+    2300022: extra3-nosepierce
+    2300024: extra3-rolled_neck_blouse
+    2300026: extra3-teeth_base
+    2300028: extra3-tongue01
+    3300000: extra3-base.obj_MeshPart0
+    3300002: extra3-base.obj_MeshPart1
+    3300004: extra3-eyebrow004
+    3300006: extra3-eyelashes04
+    3300008: extra3-highpolyeyes
+    3300010: extra3-leatherboots_2cm_MeshPart0
+    3300012: extra3-leatherboots_2cm_MeshPart1
+    3300014: extra3-leatherboots_2cm_MeshPart2
+    3300016: extra3-leatherboots_2cm_MeshPart3
+    3300018: extra3-long01
+    3300020: extra3-mini_skirt_02
+    3300022: extra3-nosepierce
+    3300024: extra3-rolled_neck_blouse
+    3300026: extra3-teeth_base
+    3300028: extra3-tongue01
+    4300000: extra3-base.obj_MeshPart0
+    4300002: extra3-base.obj_MeshPart1
+    4300004: extra3-long01
+    4300006: extra3-highpolyeyes
+    4300008: extra3-eyebrow004
+    4300010: extra3-eyelashes04
+    4300012: extra3-teeth_base
+    4300014: extra3-tongue01
+    4300016: extra3-nosepierce
+    4300018: extra3-leatherboots_2cm_MeshPart0
+    4300020: extra3-leatherboots_2cm_MeshPart1
+    4300022: extra3-leatherboots_2cm_MeshPart2
+    4300024: extra3-leatherboots_2cm_MeshPart3
+    4300026: extra3-rolled_neck_blouse
+    4300028: extra3-mini_skirt_02
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DefaultSkin
+    second: {fileID: 2100000, guid: 969874ba6991fa141a6d1054a4010a65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_deepblue
+    second: {fileID: 2100000, guid: f67b39ac9d5540540a9d330f57315312, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bootsMaterial
+    second: {fileID: 2100000, guid: 2d34e38213e5d6240bf55235b7bfcc86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyebrow004
+    second: {fileID: 2100000, guid: 80b00256a41f88e41a7a2f32302f9ee1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eylashes04
+    second: {fileID: 2100000, guid: 6250c8e6eb7dfe34ca37e21b5274af45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: long01
+    second: {fileID: 2100000, guid: 50a5ce84b760c64449a3ccb54e2207dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material.001Material
+    second: {fileID: 2100000, guid: 9593e0ec809aa254e9450b37c6e1f439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: materialMaterial
+    second: {fileID: 2100000, guid: 83580febef316aa4fa37d30191fc2660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: teethMaterial
+    second: {fileID: 2100000, guid: b43f9d7764d2bfd43bbd41f996a7e7f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tightsMaterial
+    second: {fileID: 2100000, guid: b18877579b7f9a94387c9d69f7dfb3d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tongue01Material
+    second: {fileID: 2100000, guid: 4dd468fb74d45fc4ab0e2e12633c5be7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 80e41bc290fc1464a86938ed30d71b01
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_r
+    100004: calf_l
+    100006: calf_r
+    100008: clavicle_l
+    100010: clavicle_r
+    100012: foot_l
+    100014: foot_r
+    100016: hand_l
+    100018: hand_r
+    100020: head
+    100022: index_01_l
+    100024: index_01_r
+    100026: index_02_l
+    100028: index_02_r
+    100030: index_03_l
+    100032: index_03_r
+    100034: //RootNode
+    100036: laurarodriguez
+    100038: laurarodriguez-base.obj
+    100040: laurarodriguez-base.obj_MeshPart0
+    100042: laurarodriguez-base.obj_MeshPart1
+    100044: laurarodriguez-braid01
+    100046: laurarodriguez-eyebrow001
+    100048: laurarodriguez-eyelashes02
+    100050: laurarodriguez-eyelashes_01
+    100052: laurarodriguez-female_elegantsuit01
+    100054: laurarodriguez-female_fingernails
+    100056: laurarodriguez-high_heels_library
+    100058: laurarodriguez-highpolyeyes
+    100060: laurarodriguez-teeth_base
+    100062: laurarodriguez-tongue01
+    100064: lowerarm_l
+    100066: lowerarm_r
+    100068: middle_01_l
+    100070: middle_01_r
+    100072: middle_02_l
+    100074: middle_02_r
+    100076: middle_03_l
+    100078: middle_03_r
+    100080: neck_01
+    100082: pelvis
+    100084: pinky_01_l
+    100086: pinky_01_r
+    100088: pinky_02_l
+    100090: pinky_02_r
+    100092: pinky_03_l
+    100094: pinky_03_r
+    100096: ring_01_l
+    100098: ring_01_r
+    100100: ring_02_l
+    100102: ring_02_r
+    100104: ring_03_l
+    100106: ring_03_r
+    100108: Root
+    100110: spine_01
+    100112: spine_02
+    100114: spine_03
+    100116: thigh_l
+    100118: thigh_r
+    100120: thumb_01_l
+    100122: thumb_01_r
+    100124: thumb_02_l
+    100126: thumb_02_r
+    100128: thumb_03_l
+    100130: thumb_03_r
+    100132: upperarm_l
+    100134: upperarm_r
+    400000: ball_l
+    400002: ball_r
+    400004: calf_l
+    400006: calf_r
+    400008: clavicle_l
+    400010: clavicle_r
+    400012: foot_l
+    400014: foot_r
+    400016: hand_l
+    400018: hand_r
+    400020: head
+    400022: index_01_l
+    400024: index_01_r
+    400026: index_02_l
+    400028: index_02_r
+    400030: index_03_l
+    400032: index_03_r
+    400034: //RootNode
+    400036: laurarodriguez
+    400038: laurarodriguez-base.obj
+    400040: laurarodriguez-base.obj_MeshPart0
+    400042: laurarodriguez-base.obj_MeshPart1
+    400044: laurarodriguez-braid01
+    400046: laurarodriguez-eyebrow001
+    400048: laurarodriguez-eyelashes02
+    400050: laurarodriguez-eyelashes_01
+    400052: laurarodriguez-female_elegantsuit01
+    400054: laurarodriguez-female_fingernails
+    400056: laurarodriguez-high_heels_library
+    400058: laurarodriguez-highpolyeyes
+    400060: laurarodriguez-teeth_base
+    400062: laurarodriguez-tongue01
+    400064: lowerarm_l
+    400066: lowerarm_r
+    400068: middle_01_l
+    400070: middle_01_r
+    400072: middle_02_l
+    400074: middle_02_r
+    400076: middle_03_l
+    400078: middle_03_r
+    400080: neck_01
+    400082: pelvis
+    400084: pinky_01_l
+    400086: pinky_01_r
+    400088: pinky_02_l
+    400090: pinky_02_r
+    400092: pinky_03_l
+    400094: pinky_03_r
+    400096: ring_01_l
+    400098: ring_01_r
+    400100: ring_02_l
+    400102: ring_02_r
+    400104: ring_03_l
+    400106: ring_03_r
+    400108: Root
+    400110: spine_01
+    400112: spine_02
+    400114: spine_03
+    400116: thigh_l
+    400118: thigh_r
+    400120: thumb_01_l
+    400122: thumb_01_r
+    400124: thumb_02_l
+    400126: thumb_02_r
+    400128: thumb_03_l
+    400130: thumb_03_r
+    400132: upperarm_l
+    400134: upperarm_r
+    4300000: laurarodriguez-base.obj_MeshPart0
+    4300002: laurarodriguez-base.obj_MeshPart1
+    4300004: laurarodriguez-braid01
+    4300006: laurarodriguez-highpolyeyes
+    4300008: laurarodriguez-eyebrow001
+    4300010: laurarodriguez-eyelashes02
+    4300012: laurarodriguez-teeth_base
+    4300014: laurarodriguez-tongue01
+    4300016: laurarodriguez-eyelashes_01
+    4300018: laurarodriguez-female_elegantsuit01
+    4300020: laurarodriguez-high_heels_library
+    4300022: laurarodriguez-female_fingernails
+    9500000: //RootNode
+    13700000: laurarodriguez-base.obj_MeshPart0
+    13700002: laurarodriguez-base.obj_MeshPart1
+    13700004: laurarodriguez-braid01
+    13700006: laurarodriguez-eyebrow001
+    13700008: laurarodriguez-eyelashes02
+    13700010: laurarodriguez-eyelashes_01
+    13700012: laurarodriguez-female_elegantsuit01
+    13700014: laurarodriguez-female_fingernails
+    13700016: laurarodriguez-high_heels_library
+    13700018: laurarodriguez-highpolyeyes
+    13700020: laurarodriguez-teeth_base
+    13700022: laurarodriguez-tongue01
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_brown
+    second: {fileID: 2100000, guid: 5316700732dd8eb4783217dfd6e779a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bodyMaterial
+    second: {fileID: 2100000, guid: d73dea3250f46964181ac0354ad2c617, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: braid01
+    second: {fileID: 2100000, guid: 53010fb653a51644aa951b1756d9b6a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyebrow001
+    second: {fileID: 2100000, guid: 0e6db2dc69f3e00408f2b07a3be4da4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyelashes_01
+    second: {fileID: 2100000, guid: 8670a4bad8855774790c183e2771245e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: female_elegantsuit01
+    second: {fileID: 2100000, guid: 87cb79f7f77de51499014000397c5e8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_fingernailsMaterial
+    second: {fileID: 2100000, guid: 74475625ef29cf64d97e2442e0c3f96c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_girl_shoesg_24Material
+    second: {fileID: 2100000, guid: 1de0b34a7f32c1248902ae6265c2483e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: teethMaterial
+    second: {fileID: 2100000, guid: 447c8c6ca581fe644a3852e577731aac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tongue01Material
+    second: {fileID: 2100000, guid: ec40d070e00ea7f4ab0e4a285978b8db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: young_asian_female
+    second: {fileID: 2100000, guid: 7f66e2b639b9ab947841ea566a862ecb, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
