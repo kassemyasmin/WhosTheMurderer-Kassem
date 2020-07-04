@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class ManejadorDialogos : ControladorCanvas
 {
@@ -34,6 +35,8 @@ public class ManejadorDialogos : ControladorCanvas
 
     private bool closing = false;
 
+    public AudioMixerGroup audioMixer;
+
     // Use this for initialization
     protected override void CanvasStart () {
         dialogos = FindObjectOfType<CargadorDialogos>();
@@ -53,10 +56,10 @@ public class ManejadorDialogos : ControladorCanvas
         foreach(Button b in botones)
         {
             int idx;
+            var aux = b.name.Substring(8);
 
-            idx = Convert.ToInt32(b.name.Substring(8))-1; //hallo el numero detras del nombre del boton PreguntaX
-
-            campoLineas[idx] = b;
+            if (b.name.StartsWith("Pregunta") && int.TryParse(b.name.Substring(8), out idx)) //hallo el numero detras del nombre del boton PreguntaX
+                campoLineas[idx - 1] = b;
         }
 
         Motivos = new List<Motivo>();
@@ -291,6 +294,7 @@ public class ManejadorDialogos : ControladorCanvas
     {
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = Resources.Load<AudioClip>(_audio);
+        audioSource.outputAudioMixerGroup = audioMixer;
         audioSource.Play(Convert.ToUInt32(timeToWait * audioSource.clip.samples / audioSource.clip.length));
         return audioSource.clip.length;
     }
