@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 3b60b6bc1ebba104f8efc76ce8687826
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Salero
+    100002: Salero0
+    100004: Salero002
+    100006: Salero004
+    100008: Salero005
+    100010: Salero006
+    100012: Salero007
+    100014: Salero008
+    100016: Salero009
+    100018: Salero03
+    100020: Servillet0
+    100022: Servillet1
+    100024: Servillet2
+    100026: Servillet3
+    100028: Servillet4
+    100030: Servillet5
+    100032: Servillet6
+    100034: Servillet7
+    100036: Servilleta
+    100038: Servillete
+    100040: //RootNode
+    100042: Tapa sale0
+    100044: Tapa sale1
+    100046: Tapa sale2
+    100048: Tapa sale3
+    100050: Tapa saler
+    400000: Salero
+    400002: Salero0
+    400004: Salero002
+    400006: Salero004
+    400008: Salero005
+    400010: Salero006
+    400012: Salero007
+    400014: Salero008
+    400016: Salero009
+    400018: Salero03
+    400020: Servillet0
+    400022: Servillet1
+    400024: Servillet2
+    400026: Servillet3
+    400028: Servillet4
+    400030: Servillet5
+    400032: Servillet6
+    400034: Servillet7
+    400036: Servilleta
+    400038: Servillete
+    400040: //RootNode
+    400042: Tapa sale0
+    400044: Tapa sale1
+    400046: Tapa sale2
+    400048: Tapa sale3
+    400050: Tapa saler
+    2300000: Salero0
+    2300002: Salero002
+    2300004: Salero004
+    2300006: Salero006
+    2300008: Salero008
+    2300010: Servillet0
+    2300012: Servillet1
+    2300014: Servillet2
+    2300016: Servillet3
+    2300018: Servillet4
+    2300020: Servillet5
+    2300022: Servillet6
+    2300024: Servillet7
+    2300026: Servilleta
+    2300028: Servillete
+    2300030: Tapa sale0
+    2300032: Tapa sale1
+    2300034: Tapa sale2
+    2300036: Tapa sale3
+    2300038: Tapa saler
+    2300040: //RootNode
+    3300000: Salero0
+    3300002: Salero002
+    3300004: Salero004
+    3300006: Salero006
+    3300008: Salero008
+    3300010: Servillet0
+    3300012: Servillet1
+    3300014: Servillet2
+    3300016: Servillet3
+    3300018: Servillet4
+    3300020: Servillet5
+    3300022: Servillet6
+    3300024: Servillet7
+    3300026: Servilleta
+    3300028: Servillete
+    3300030: Tapa sale0
+    3300032: Tapa sale1
+    3300034: Tapa sale2
+    3300036: Tapa sale3
+    3300038: Tapa saler
+    3300040: //RootNode
+    4300000: Salero0
+    4300002: Tapa saler
+    4300004: Salero004
+    4300006: Tapa sale0
+    4300008: Salero006
+    4300010: Tapa sale1
+    4300012: Salero008
+    4300014: Tapa sale2
+    4300016: Servillete
+    4300018: Servilleta
+    4300020: Servillet0
+    4300022: Servillet1
+    4300024: Servillet2
+    4300026: Servillet3
+    4300028: Servillet4
+    4300030: Servillet5
+    4300032: Servillet6
+    4300034: Servillet7
+    4300036: Salero002
+    4300038: Tapa sale3
+    4300040: Object006
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Objetos
+    second: {fileID: 2100000, guid: 8fb7e2a653835104ba8d3bad154d134d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
