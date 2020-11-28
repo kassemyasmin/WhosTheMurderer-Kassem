@@ -7,7 +7,6 @@ public abstract class AssetClickeable : MonoBehaviour {
 
     int originalLayer;
     Stack<int> layerStack = new Stack<int>();
-    protected Analytics gAna;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +16,6 @@ public abstract class AssetClickeable : MonoBehaviour {
         controladorObjetosClickeables.Registrar(this);
         layerStack.Push(this.gameObject.layer);
         originalLayer = this.gameObject.layer;
-        gAna = FindObjectOfType<Analytics>();
-
     }
 
     protected virtual void AssetStart() { }

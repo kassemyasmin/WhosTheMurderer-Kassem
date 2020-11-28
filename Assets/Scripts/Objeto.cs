@@ -1,4 +1,5 @@
-﻿using UnityEngine.SceneManagement;
+﻿using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Objeto : AssetClickeable
 {
@@ -29,11 +30,17 @@ public class Objeto : AssetClickeable
             pistaUI.ShowPista(pistas[0]);
             listaInventario.AddPista(pistas[0]);
 
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("EncontrarPista")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel("Pista " + pistas[0].Nombre));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("EncontrarPista", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Pista ",  pistas[0].Nombre
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
     }
 

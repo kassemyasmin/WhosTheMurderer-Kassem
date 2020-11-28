@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class TimerVideos : MonoBehaviour
 {
@@ -11,14 +13,12 @@ public class TimerVideos : MonoBehaviour
 
    // float timer;
     bool timerStarted = false;
-    private Analytics gAna;
     private LevelManager lm;
 
     // Use this for initialization
     void Start()
     {
         StartTimer();
-        gAna = FindObjectOfType<Analytics>();
         lm = FindObjectOfType<LevelManager>();
     }
 
@@ -47,10 +47,17 @@ public class TimerVideos : MonoBehaviour
                 {
                     if (SceneManager.GetActiveScene().name == "Creditos")
                     {
-                        gAna.gv4.LogEvent(new EventHitBuilder()
-                        .SetEventCategory("Creditos")
-                        .SetEventAction("EscuchoHastaFinal"));
-                        gAna.gv4.DispatchHits();
+                        UnityEngine.Analytics.Analytics.CustomEvent("Creditos", new Dictionary<string, object>
+                        {
+                            {
+                                "Scene", SceneManager.GetActiveScene().name
+                            },
+                                                    {
+                                "EscuchoHastaFinal",true
+                            }
+                        });
+
+                        UnityEngine.Analytics.Analytics.FlushEvents();
                     }
                 }
 

@@ -10,12 +10,9 @@ public class LevelManager : MonoBehaviour
     private Vector2 cursorSpot = Vector2.zero;
     private int loadCount=0;
 
-    Analytics gAna;
-
     void Start()
     {
         Cursor.SetCursor(cursorTexture, cursorSpot, cursorMode);
-        gAna = FindObjectOfType<Analytics>();
         FirstLoad = true;
     }
 
@@ -44,35 +41,48 @@ public class LevelManager : MonoBehaviour
        // SceneManager.SetActiveScene(SceneManager.GetSceneByName(name));
         if (name == "Creditos")
         {
-            gAna.gv4.LogScreen(new AppViewHitBuilder()
-            .SetScreenName("Creditos"));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("Creditos");
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
 
         if (reiniciar)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-            .SetEventCategory("ReiniciarCaso")
-            .SetEventAction(SceneManager.GetActiveScene().name));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("ReiniciarCaso", new Dictionary<string, object>
+                        {
+                            {
+                                "Scene", SceneManager.GetActiveScene().name
+                            }
+                        });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
 
         if (name == "Menu")
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-            .SetEventCategory("VolverAlMenu")
-            .SetEventAction(SceneManager.GetActiveScene().name));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("VolverAlMenu", new Dictionary<string, object>
+                        {
+                            {
+                                "Scene", SceneManager.GetActiveScene().name
+                            }
+                        });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
     }
 
     public void QuitGame()
     {
 
-        gAna.gv4.LogEvent(new EventHitBuilder()
-        .SetEventCategory("Salir")
-        .SetEventAction(SceneManager.GetActiveScene().name));
-        gAna.gv4.DispatchHits();
+        UnityEngine.Analytics.Analytics.CustomEvent("Salir", new Dictionary<string, object>
+                        {
+                            {
+                                "Scene", SceneManager.GetActiveScene().name
+                            }
+                        });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
 
         Application.Quit();
     }

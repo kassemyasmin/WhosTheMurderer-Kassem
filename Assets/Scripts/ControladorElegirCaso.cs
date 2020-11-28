@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class ControladorElegirCaso : MonoBehaviour {
     bool firstFrame = true;
@@ -8,7 +10,6 @@ public class ControladorElegirCaso : MonoBehaviour {
     private Button caso3;
     private Persister persister;
     private LevelManager levelManager;
-    private Analytics gAna;
 
     // Use this for initialization
     void Start()
@@ -23,11 +24,15 @@ public class ControladorElegirCaso : MonoBehaviour {
         }
         persister = FindObjectOfType<Persister>();
         levelManager = FindObjectOfType<LevelManager>();
-        gAna = FindObjectOfType<Analytics>();
 
-        gAna.gv4.LogScreen(new AppViewHitBuilder()
-          .SetScreenName("Jugar"));
-        gAna.gv4.DispatchHits();
+        UnityEngine.Analytics.Analytics.CustomEvent("Screen", new Dictionary<string, object>
+                    {
+                        {
+                            "Screen", "Jugar"
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
     // Update is called once per frame
@@ -56,9 +61,14 @@ public class ControladorElegirCaso : MonoBehaviour {
             Activo = true;
         }
 
-        gAna.gv4.LogScreen(new AppViewHitBuilder()
-          .SetScreenName("Elegir Caso"));
-        gAna.gv4.DispatchHits();
+        UnityEngine.Analytics.Analytics.CustomEvent("Screen", new Dictionary<string, object>
+                    {
+                        {
+                            "Screen", "Elegir Caso"
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
     public virtual void Ocultar()
@@ -74,11 +84,15 @@ public class ControladorElegirCaso : MonoBehaviour {
 
     public void IniciarCaso(string caso)
     {
-        gAna.gv4.LogEvent(new EventHitBuilder()
-            .SetEventCategory("ElegirCaso")
-            .SetEventAction("IniciaCaso")
-            .SetEventLabel(caso));
-        gAna.gv4.DispatchHits();
+
+        UnityEngine.Analytics.Analytics.CustomEvent("ElegirCaso", new Dictionary<string, object>
+                    {
+                        {
+                            "IniciaCaso", caso
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
 
         levelManager.LoadScene(caso);
     }

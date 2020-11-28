@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Personaje : AssetClickeable{
@@ -21,11 +22,18 @@ public class Personaje : AssetClickeable{
     {
         controladorTutorial.Dialogo();
         manejadorDialogos.MostrarDialogo(nombre);
-        gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Hablar")
-                   .SetEventAction(nombre)
-                   .SetEventLabel(SceneManager.GetActiveScene().name)); 
-        gAna.gv4.DispatchHits();
+
+        UnityEngine.Analytics.Analytics.CustomEvent("Hablar", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Nombre ",  nombre
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
 }

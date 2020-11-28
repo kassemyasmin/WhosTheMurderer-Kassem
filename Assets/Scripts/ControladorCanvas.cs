@@ -7,7 +7,6 @@ public class ControladorCanvas : MonoBehaviour {
     ControladorCamara camara;
     ControladorConjuntoCanvas conjuntoCanvas;
     ControladorClickeable controladorClickeable;
-    protected Analytics gAna;
 
     private ControladorCursor controladorCursor;
 
@@ -20,7 +19,6 @@ public class ControladorCanvas : MonoBehaviour {
         controladorCursor = FindObjectOfType<ControladorCursor>();
         CanvasStart();
         Activo = true;
-        gAna = FindObjectOfType<Analytics>();
     }
 
     // Update is called once per frame

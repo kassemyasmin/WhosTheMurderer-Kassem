@@ -6,7 +6,6 @@ public class ColeccionSospechosos : MonoBehaviour {
 
     private SortedList<string, Sospechoso> sospechososDelCaso = new SortedList<string, Sospechoso>();
     private SortedList<string, Sospechoso> sospechososEncontrados = new SortedList<string, Sospechoso>();
-    Analytics gAna;
 
     // Use this for initialization
     void Start () {
@@ -16,8 +15,6 @@ public class ColeccionSospechosos : MonoBehaviour {
         {
             sospechososDelCaso.Add(s.Nombre, s);
         }
-        gAna = FindObjectOfType<Analytics>();
-
     }
 	
 	// Update is called once per frame
@@ -32,11 +29,18 @@ public class ColeccionSospechosos : MonoBehaviour {
     {
         if (!sospechososEncontrados.ContainsKey(_nombre))
             sospechososEncontrados.Add(_nombre, sospechososDelCaso[_nombre]);
-        gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("EncontrarSospechoso")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel(_nombre));
-        gAna.gv4.DispatchHits();
+
+        UnityEngine.Analytics.Analytics.CustomEvent("EncontrarSospechoso", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Sospechoso ",  _nombre
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
     public void VisibilizaNombre(string nombre)

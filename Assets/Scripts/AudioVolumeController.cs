@@ -18,12 +18,10 @@ public class AudioVolumeController : MonoBehaviour
 
     private DontDestroyAudioSettings dontDestroyAudioSettings;
 
-    private Analytics gAna;
 
     private void Start()
     {
         dontDestroyAudioSettings = FindObjectOfType<DontDestroyAudioSettings>();
-        gAna = FindObjectOfType<Analytics>();
 
         musicSlider.value = 0f;
         voicesSlider.value = 0f;
@@ -47,22 +45,35 @@ public class AudioVolumeController : MonoBehaviour
         masterMixer.SetFloat("Voices", Mathf.Log10(voicesSlider.value) * 10f);
         dontDestroyAudioSettings.voicesVolume = Mathf.Log10(voicesSlider.value) * 10f;
 
-        gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Volumen modificado")
-                   .SetEventAction(SceneManager.GetActiveScene().name)
-                   .SetEventLabel("Voces modificadas"));
-        gAna.gv4.DispatchHits();
+        UnityEngine.Analytics.Analytics.CustomEvent("Volumen modificado", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Voces modificadas",  dontDestroyAudioSettings.voicesVolume
+                        }
+                    });
 
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
     public void SetMusicSound()
     {
         masterMixer.SetFloat("Music", Mathf.Log10(musicSlider.value) * 10f);
         dontDestroyAudioSettings.musicVolume = Mathf.Log10(musicSlider.value) * 10f;
-        gAna.gv4.LogEvent(new EventHitBuilder()
-                  .SetEventCategory("Volumen modificado")
-                  .SetEventAction(SceneManager.GetActiveScene().name)
-                  .SetEventLabel("Musica modificadas"));
-        gAna.gv4.DispatchHits();
+
+        UnityEngine.Analytics.Analytics.CustomEvent("Volumen modificado", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Musica modificada",  dontDestroyAudioSettings.musicVolume
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
+
     }
 }

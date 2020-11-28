@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
+using System.Collections.Generic;
 
 public class MeGustoNoMeGusto : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class MeGustoNoMeGusto : MonoBehaviour
     public bool Activo { get; private set; }
     bool? GustoActivo = null;
     bool? FacilActivo = null;
-    private Analytics gAna;
 
     private Button siGusta;
     private Button noGusta;
@@ -21,7 +21,6 @@ public class MeGustoNoMeGusto : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        gAna = FindObjectOfType<Analytics>();
         Activo = true;
 
         foreach (var b in GetComponentsInChildren<Button>())
@@ -125,20 +124,32 @@ public class MeGustoNoMeGusto : MonoBehaviour
     {
         if (FacilActivo.HasValue)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                        .SetEventCategory("MeGusto")
-                        .SetEventAction(SceneManager.GetActiveScene().name)
-                        .SetEventLabel(Convert.ToString(GustoActivo.Value)));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("MeGusto", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Me Gusto",Convert.ToString(GustoActivo.Value)
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
 
         if (GustoActivo.HasValue)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                        .SetEventCategory("FueFacil")
-                        .SetEventAction(SceneManager.GetActiveScene().name)
-                        .SetEventLabel(Convert.ToString(FacilActivo.Value)));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("FueFacil", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Fue facil",Convert.ToString(FacilActivo.Value)
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
 
         SceneManager.LoadScene(siguienteEscena);

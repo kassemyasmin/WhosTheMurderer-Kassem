@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 using UnityEngine.UI;
 
 
@@ -20,14 +21,12 @@ public class ToggleMute : MonoBehaviour
 
     DontDestroyAudioSettings audioData;
 
-    private Analytics gAna;
 
     private void Start()
     {
         audioData = FindObjectOfType<DontDestroyAudioSettings>();
        /* voicesMuted = audioData.voicesMuted;
         musicMuted = audioData.musicMuted;*/
-        gAna = FindObjectOfType<Analytics>();
     }
 
 
@@ -62,20 +61,34 @@ public class ToggleMute : MonoBehaviour
         if(mixGroup == "Voices")
         {
             audioData.voicesMuted = true;
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("Mute")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel("Voces Muteadas"));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Mute", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Voces Muteadas",true
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
         if (mixGroup == "Music")
         {
             audioData.musicMuted = true;
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Mute")
-                   .SetEventAction(SceneManager.GetActiveScene().name)
-                   .SetEventLabel("Musica Muteada"));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Mute", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Musica Muteada",true
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
             
     }
@@ -87,21 +100,37 @@ public class ToggleMute : MonoBehaviour
         if (mixGroup == "Voices")
         {
             audioData.voicesMuted = false;
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Unmuted")
-                   .SetEventAction(SceneManager.GetActiveScene().name)
-                   .SetEventLabel("Voces desmuteadas"));
-            gAna.gv4.DispatchHits();        }
-            
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Unmuted", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Voces desmuteadas",true
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
+        }
+        //cosas raras nuevas
         if (mixGroup == "Music")
         {
+            UnityEngine.Analytics.AnalyticsEvent.CustomEvent(new Dictionary<string, object> { { "music Unmuted", true } });
             audioData.musicMuted = false;
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Unmuted")
-                   .SetEventAction(SceneManager.GetActiveScene().name)
-                   .SetEventLabel("Musica desmuteada"));
-            gAna.gv4.DispatchHits();
+
+                UnityEngine.Analytics.Analytics.CustomEvent("Unmuted", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Musica desmuteada",true
+                        }
+                    });
+
+                UnityEngine.Analytics.Analytics.FlushEvents();
         }
-            
+        
     }
 }

@@ -64,7 +64,6 @@ public class ManejadorDialogos : ControladorCanvas
 
         Motivos = new List<Motivo>();
         cronometro = gameObject.GetComponent<Cronometro>();
-        gAna = FindObjectOfType<Analytics>();
         var audiosMuchasGracias = new List<string>();
         audiosMuchasGracias.Add(audioMuchasGracias);
         muchasGracias = new LineaDialogo(9999, "Muchas Gracias", "", false, new List<string>(), new List<string>(), true, null,audiosMuchasGracias, "");
@@ -89,22 +88,35 @@ public class ManejadorDialogos : ControladorCanvas
         {
             if (totalPlayTime <= cronometro.TiempoTranscurrido)
             {
-                gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("EscuchoHastaFinal")
-                    .SetEventAction(dialogoActual.NombrePersonaje)
-                    .SetEventLabel(lineaActual.Pregunta)
-                    );
-                gAna.gv4.DispatchHits();
+                UnityEngine.Analytics.Analytics.CustomEvent("EscuchoHastaFinal", new Dictionary<string, object>
+                    {
+                        {
+                            "Personaje", dialogoActual.NombrePersonaje
+                        },
+                                               {
+                            "pregunta", lineaActual.Pregunta
+                        }
+                    });
+
+                UnityEngine.Analytics.Analytics.FlushEvents();
             }
             else
             {
-                gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("NoEscuchoHastaFinal")
-                    .SetEventAction(dialogoActual.NombrePersonaje)
-                    .SetEventLabel(lineaActual.Pregunta)
-                    .SetEventValue(Convert.ToInt64(cronometro.TiempoTranscurrido))
-                    );
-                gAna.gv4.DispatchHits();
+                UnityEngine.Analytics.Analytics.CustomEvent("NoEscuchoHastaFinal", new Dictionary<string, object>
+                    {
+                        {
+                            "Personaje", dialogoActual.NombrePersonaje
+                        },
+                                               {
+                            "pregunta", lineaActual.Pregunta
+                        },
+                        {
+                            "TiempoTranscurrido", Convert.ToInt64(cronometro.TiempoTranscurrido)
+                        }
+                    });
+
+                UnityEngine.Analytics.Analytics.FlushEvents();
+
             }
         }
         Limpiar();
@@ -123,11 +135,17 @@ public class ManejadorDialogos : ControladorCanvas
             closing = true;
         else
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                .SetEventCategory("Personaje")
-                .SetEventAction(dialogoActual.NombrePersonaje)
-                .SetEventLabel(lineaElegida.Pregunta));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("Personaje", new Dictionary<string, object>
+                    {
+                        {
+                            "Personaje", dialogoActual.NombrePersonaje
+                        },
+                                               {
+                            "pregunta", lineaActual.Pregunta
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
         AgregarPistas(lineaElegida.Pistas);
         AgregarSospechosos(lineaElegida.Sospechosos);
@@ -145,11 +163,18 @@ public class ManejadorDialogos : ControladorCanvas
         if (_motivo != null)
         {
             Motivos.Add(_motivo);
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("Motivo")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel(dialogoActual.NombrePersonaje));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Motivo", new Dictionary<string, object>
+                    {
+                                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                        {
+                            "Personaje", dialogoActual.NombrePersonaje
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
     }
 

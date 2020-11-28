@@ -12,7 +12,6 @@ public class ControladorAjustes1 : MonoBehaviour
     public int ResY;
     public bool Fullscreen;
 
-    private Analytics gAna;
     private Dropdown resoluciones;
 
     // Use this for initialization
@@ -21,7 +20,6 @@ public class ControladorAjustes1 : MonoBehaviour
         var opcionesResolucion = new List<Dropdown.OptionData>();
 
         Activo = true;
-        gAna = FindObjectOfType<Analytics>();
         resoluciones=GetComponentInChildren<Dropdown>();
 
         foreach(var res in Screen.resolutions)
@@ -52,11 +50,14 @@ public class ControladorAjustes1 : MonoBehaviour
     private void SetResolution(int ancho, int alto, bool fullscreen)
     {
         Screen.SetResolution(ancho, alto, fullscreen);
-        gAna.gv4.LogEvent(new EventHitBuilder()
-            .SetEventCategory("Ajustes")
-            .SetEventAction("Resolucion")
-            .SetEventLabel(Convert.ToString(ancho) + "x" + Convert.ToString(alto)));
-        gAna.gv4.DispatchHits();
+        UnityEngine.Analytics.Analytics.CustomEvent("Ajustes", new Dictionary<string, object>
+                    {
+                        {
+                            "Resolucion", Convert.ToString(ancho) + "x" + Convert.ToString(alto)
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
     public void SubirVolumen()
@@ -88,9 +89,14 @@ public class ControladorAjustes1 : MonoBehaviour
             Activo = true;
         }
 
-        gAna.gv4.LogScreen(new AppViewHitBuilder()
-            .SetScreenName("Ajustes"));
-        gAna.gv4.DispatchHits();
+        UnityEngine.Analytics.Analytics.CustomEvent("Ajustes", new Dictionary<string, object>
+                    {
+                        {
+                            "Screen", "Ajustes"
+                        }
+                    });
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
     }
 
     public virtual void Ocultar()
@@ -99,11 +105,15 @@ public class ControladorAjustes1 : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             Activo = false;
-            gAna.gv4.LogEvent(new EventHitBuilder()
-            .SetEventCategory("Ajustes")
-            .SetEventAction("Volumen")
-            .SetEventLabel(Convert.ToString(AudioListener.volume)));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Ajustes", new Dictionary<string, object>
+                    {
+                        {
+                            "Volumen", AudioListener.volume
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
     }
 }

@@ -42,7 +42,6 @@ public class ControladorHipotesis : MonoBehaviour
     private Pista[] evidencias;
     /*public GameObject[] evidenciasOkGo;
     public GameObject[] evidenciasMalGo;*/
-    private Analytics gAna;
     private ManejadorTips tips;
     private Timer timer;
     ControladorCamara controladorCamara;
@@ -67,7 +66,6 @@ public class ControladorHipotesis : MonoBehaviour
         comprobandoTeoria = FindObjectOfType<CanvasComprobandoTeoria>();
         comprobandoTeoria.Ocultar();
         persister = FindObjectOfType<Persister>();
-        gAna = FindObjectOfType<Analytics>();
         tips = FindObjectOfType<ManejadorTips>();
         timer = FindObjectOfType<Timer>();
         controladorCamara = FindObjectOfType<ControladorCamara>();
@@ -135,9 +133,11 @@ public class ControladorHipotesis : MonoBehaviour
         comprobandoTeoria.Mostrar();
         comprobandoTeoria.LapsoDeTiempo = 8f;
         inventario.gameObject.GetComponent<Canvas>().enabled = false;
-        gAna.gv4.LogScreen(new AppViewHitBuilder()
-           .SetScreenName("Comprobando teoria"));
-        gAna.gv4.DispatchHits();
+
+        UnityEngine.Analytics.Analytics.CustomEvent("Comprobando teoria");
+
+        UnityEngine.Analytics.Analytics.FlushEvents();
+
         comprobandoHipotesis = true;
     }
 
@@ -166,71 +166,105 @@ public class ControladorHipotesis : MonoBehaviour
 
         if (Arma != null)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("Seleccionar")
-                    .SetEventAction("Arma")
-                    .SetEventLabel(arma.Nombre));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("Seleccionar", new Dictionary<string, object>
+                    {
+                        {
+                            "Arma", arma.Nombre
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
+
         }
 
         if (Motivo != null)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Seleccionar")
-                   .SetEventAction("Motivo")
-                   .SetEventLabel(motivo.Descripcion));
-            gAna.gv4.DispatchHits();
+            UnityEngine.Analytics.Analytics.CustomEvent("Seleccionar", new Dictionary<string, object>
+                    {
+                        {
+                            "Motivo", motivo.Descripcion
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
 
         if (SospechosoSeleccionado != null)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Seleccionar")
-                   .SetEventAction("Sospechoso")
-                   .SetEventLabel(SospechosoSeleccionado.Nombre));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Seleccionar", new Dictionary<string, object>
+                    {
+                        {
+                            "Sospechoso", SospechosoSeleccionado.Nombre
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
 
         for (int c = 0; c < 5; c++)
             if (evidencias[c] != null)
             {
-                gAna.gv4.LogEvent(new EventHitBuilder()
-                  .SetEventCategory("Seleccionar")
-                  .SetEventAction("Pista")
-                  .SetEventLabel(evidencias[c].Nombre));
-                gAna.gv4.DispatchHits();
+                UnityEngine.Analytics.Analytics.CustomEvent("Seleccionar", new Dictionary<string, object>
+                    {
+                        {
+                            "Pista", evidencias[c].Nombre
+                        }
+                    });
+
+                UnityEngine.Analytics.Analytics.FlushEvents();
             }
 
         if (gano)
         {
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                .SetEventCategory("Niveles")
-                .SetEventAction("Ganar")
-                .SetEventLabel(SceneManager.GetActiveScene().name));
-            //iohjkljh
+            UnityEngine.Analytics.Analytics.CustomEvent("Niveles", new Dictionary<string, object>
+                    {
+                        {
+                            "Ganar", SceneManager.GetActiveScene().name
+                        }
+                    });
 
+            UnityEngine.Analytics.Analytics.CustomEvent("GanarTiempo", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Tiempo Restante", timer.TiempoRestante
+                        }
+                    });
 
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("GanarTiempo")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel(timer.TiempoRestante));
+            UnityEngine.Analytics.Analytics.CustomEvent("GanarOportunidades", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "contador", Convert.ToString(contador)
+                        }
+                    });
 
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("GanarOportunidades")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel(Convert.ToString(contador)));
+            UnityEngine.Analytics.Analytics.CustomEvent("Tips", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Tips", Convert.ToString(tips.ContadorTips)
+                        }
+                    });
 
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("Tips")
-                    .SetEventAction(SceneManager.GetActiveScene().name)
-                    .SetEventLabel(Convert.ToString(tips.ContadorTips)));
+            UnityEngine.Analytics.Analytics.CustomEvent("Zoom", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Zoom", Convert.ToString(controladorCamara.ContadorZoom)
+                        }
+                    });
 
-            gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Zoom")
-                   .SetEventAction(SceneManager.GetActiveScene().name)
-                   .SetEventLabel(Convert.ToString(controladorCamara.ContadorZoom)));
-            gAna.gv4.DispatchHits();
-
+            UnityEngine.Analytics.Analytics.FlushEvents();
 
 
             if (SceneManager.GetActiveScene().name == "Caso1")
@@ -365,16 +399,19 @@ public class ControladorHipotesis : MonoBehaviour
 
             if (contador == 0)
             {
-                gAna.gv4.LogEvent(new EventHitBuilder()
-                    .SetEventCategory("FinCaso")
-                    .SetEventAction(SceneManager.GetActiveScene().name));
+                UnityEngine.Analytics.Analytics.CustomEvent("FinCaso", new Dictionary<string, object>
+                    {
+                        {
+                            "Scene", SceneManager.GetActiveScene().name
+                        },
+                                                {
+                            "Perder","SinOportunidades"
+                        }
+                    });
 
-                gAna.gv4.LogEvent(new EventHitBuilder()
-                   .SetEventCategory("Perder")
-                   .SetEventAction(SceneManager.GetActiveScene().name)
-                   .SetEventLabel("SinOportunidades"));
-                gAna.gv4.DispatchHits();
+                
 
+                UnityEngine.Analytics.Analytics.FlushEvents();
 
                 //finalPierdo.Mostrar();
                 SceneManager.LoadScene(VideoPerder);

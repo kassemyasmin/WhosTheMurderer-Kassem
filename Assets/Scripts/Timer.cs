@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class Timer:MonoBehaviour {
 
@@ -17,7 +18,6 @@ public class Timer:MonoBehaviour {
     [SerializeField]
     float tipTime = 30;
     public string TiempoRestante { get; private set; }
-    Analytics gAna;
     ControladorCamara controladorCamara;
 
     // Use this for initialization
@@ -25,7 +25,6 @@ public class Timer:MonoBehaviour {
     {
         StartTimer();
         textoTimer = GetComponentInChildren<Text>();
-        gAna = FindObjectOfType<Analytics>();
         controladorCamara = FindObjectOfType<ControladorCamara>();
     }
     public void StartTimer()
@@ -68,11 +67,17 @@ public class Timer:MonoBehaviour {
                 StopTimer();
                 controladorCamara.Reset();
 
-                gAna.gv4.LogEvent(new EventHitBuilder()
-                  .SetEventCategory("Perder")
-                  .SetEventAction(SceneManager.GetActiveScene().name)
-                  .SetEventLabel("SinTiempo"));
-                gAna.gv4.DispatchHits();
+                UnityEngine.Analytics.Analytics.CustomEvent("Perder", new Dictionary<string, object>
+                        {
+                            {
+                                "Scene", SceneManager.GetActiveScene().name
+                            },
+                             {
+                                "Tiempo restante",0
+                            }
+                        });
+
+                UnityEngine.Analytics.Analytics.FlushEvents();
             }
             ActualizarTexto();
         }

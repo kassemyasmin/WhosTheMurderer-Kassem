@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControladorTeclado : MonoBehaviour
 {
@@ -35,18 +37,30 @@ public class ControladorTeclado : MonoBehaviour
 
             controladorTutorial.AbrirInventario();
             inventario.Togle();
-            gAna.gv4.LogScreen(new AppViewHitBuilder()
-                .SetScreenName("Inventario"));
-            gAna.gv4.DispatchHits();
+
+            UnityEngine.Analytics.Analytics.CustomEvent("Inventario", new Dictionary<string, object>
+                    {
+                        {
+                            "Inventario", SceneManager.GetActiveScene().name
+                        }
+                    });
+
+            UnityEngine.Analytics.Analytics.FlushEvents();
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!conjuntoCanvas.Escape())
             {
+                UnityEngine.Analytics.Analytics.CustomEvent("Pausa", new Dictionary<string, object>
+                    {
+                        {
+                            "Pausa", SceneManager.GetActiveScene().name
+                        }
+                    });
+
+                UnityEngine.Analytics.Analytics.FlushEvents();
+
                 pausa.Togle();
-                gAna.gv4.LogScreen(new AppViewHitBuilder()
-                    .SetScreenName("Pausa"));
-                gAna.gv4.DispatchHits();
             }
         }
         if (Input.GetKeyDown(KeyCode.Q))
